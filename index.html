@@ -9,8 +9,69 @@
 </head>
 <body>
 
-    <h1>Hello world</h1>
+    <header>
+        <nav class="main_nav">
+            <div>
+                <img src="assets/logo_b.png" alt="logo valia" class="main_logo">
+            </div>
+            <div>
+                <ul class="nav_menu">
+                    <li>
+                        <a class="f14 bold" target="_blank" href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="f14 bold" target="_blank" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="primera_busqueda_view">
+        <div>
+            <div class="caja_flotante">
+                <h1>Averigua el <strong>valor</strong>
+                    de un <strong>inmueble</strong></h1>
+                <p class="f24">Conócelo en segundos, con tan sólo unos clics</p>
+
+                <div class="buscador">
+                    <form id="buscador_form" action="mapa.html" method="POST">
+                        <label for="ubicacion" class="label_ubicacion">
+                            <input placeholder="Escribe la dirección o distrito" type="text" name="ubicacion" id="input_ubicacion" class="bold f14 input_ubicacion" autocomplete="off">            
+                            <span class="f14 error_span">Dirección o distrito inválido.</span>
+                        </label>
+                        <input id="lat" type="hidden" name="lat" value="">
+                        <input id="lng" type="hidden" name="lng" value="">
+                        <button type="submit" class="white black f14 btn_buscar">BUSCAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="img_col_2">
+            <img src="assets/fondo_inicio.png" alt="fondo">
+        </div>
+    </div>
+
+    <div class="first_content">
+        <p class="f24">
+            ¿Cómo <strong>obtiene el valor estimado</strong> por Valia?
+        </p>
+        <p>
+            Valia estima rangos de precio de venta y de alquiler para un inmueble en base a su ubicación y sus características.
+            <br><br>
+            El cálculo se realiza mediante un sistema de algoritmos estadísticos desarrollados por Valia basados en información pública y privada de cientos de miles de observaciones recogidas del mercado y compartida por nuestros usuarios.
+            <br><br>
+            Su principal objetivo es servir como un punto de partida para aproximar el precio al que se ofrecería un inmueble en el mercado.
+        </p>
+        <hr>
+    </div>
     
+    <footer>
+        <p class="f14 white text_center bold">
+                2019 Valia USA Corp
+        </p>
+    </footer>
+
     <script src="js/app.js"></script>
 </body>
 </html>

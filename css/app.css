@@ -1,0 +1,218 @@
+@font-face{
+    src: url('../fonts/Lato-Light.ttf');
+    font-weight: 300;
+    font-family: light;
+}@font-face{
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-family: regular;
+}@font-face{
+    src: url('../fonts/Lato-Black.ttf');
+    font-weight: black;
+    font-family: black;
+}
+body{
+    margin: 0;
+}
+*{
+    font-family: light;
+    font-weight: 300;
+    color: #415262;
+    font-size: 1.31vw;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+.bold, .bold *, strong{
+    font-family: regular;
+}
+.black, .black *{
+    font-family: black;
+}
+.f24, .f24 *{
+    font-size: 1.75vw;
+}
+.f14, .f14 *{
+    font-size: 1.02vw;
+}
+h1, h1 *{
+    font-size: 3.51vw;
+}
+.white, .white *{
+    color: #fff;
+}
+.text_center{
+    text-align: center;
+}
+/*  Navegador ------------------------------------------------------------------------------------------------- */
+header{
+    background: #fff;
+    padding: 0 1.61vw;
+    display: flex;
+    align-items: stretch;
+    height: 3.66vw;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-right: 0;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div{
+    width: 100%;
+}
+.main_logo{
+    width: 7vw;
+}
+.nav_menu{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+.nav_menu li{
+    list-style: none;
+    width: 7vw;
+    text-align: center;
+    margin-left: 2vw;
+}
+.nav_menu li:nth-child(1){
+    margin-left: 0;
+}
+
+
+/* Home ------------------------------------------------------------------------------------------------------------- */
+
+.primera_busqueda_view{
+    display: flex;
+    justify-content: space-between;
+}
+.primera_busqueda_view > div.img_col_2{
+    width: 42.6vw;
+}
+.primera_busqueda_view > div.img_col_2 img{
+    width: 100%;
+    display: block;
+}
+.caja_flotante{
+    position: relative;
+    margin-left: 9.8vw;
+    margin-top: 16.83vw;
+}
+.caja_flotante h1{
+    max-width: 28vw;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+.caja_flotante > p{
+    margin: 0;
+    line-height: 1;
+}
+.buscador > #buscador_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.92vw;
+}
+.label_ubicacion{
+    position: relative;
+    display: block;
+}
+.label_ubicacion:before{
+    content: '';
+    width: 1.17vw;
+    height: 1.68vw;
+    background-image: url(../assets/location.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: .87vw;
+    opacity: .7;
+    transition: opacity .6s;
+}
+.active.label_ubicacion:before{
+    opacity: 1;
+}
+#input_ubicacion{
+    width: 31.25vw;
+    height: 3.3vw;
+    border-bottom-left-radius: 2.2vw;
+    border-top-left-radius: 2.2vw;
+    border: solid 1px #4152629a;
+    background-color: #ffffff;
+    border-right: none;
+    padding-left: 2.92vw;
+}
+#input_ubicacion::placeholder{
+    font-family: light;
+}
+#input_ubicacion:focus{
+    border-color: #415262;
+}
+.active > #input_ubicacion{
+    border-color: #415262
+}
+.error #input_ubicacion{
+    border-color: #ff6868
+}
+.btn_buscar{
+    width: 8.19vw;
+    height: 3.3vw;
+    border-top-right-radius: 2.2vw;
+    border-bottom-right-radius: 2.2vw;
+    background-color: #30e190;
+    border: none;
+}
+.error_span{
+    display: none;
+    position: absolute;
+    color: #ff6868;
+    left: 1.3vw;
+    bottom: -1.3vw;
+}
+.error > .error_span{
+    display: block;
+}
+.first_content{
+    max-width: 79.22vw;
+    margin: auto;
+    margin-top: 2.92vw;
+    margin-bottom: 12.44vw;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #d4dbe2;
+    border: none;
+    margin: 2.92vw 0;
+}
+
+
+
+/* Footer  ---------------------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: #415262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.66vw;
+}
