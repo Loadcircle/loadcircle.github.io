@@ -101,9 +101,14 @@ header nav div{
 .primera_busqueda_view{
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 .primera_busqueda_view > div.img_col_2{
     width: 42.6vw;
+    background-image: url(../assets/fondo_inicio.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .primera_busqueda_view > div.img_col_2 img{
     width: 100%;
