@@ -33,13 +33,14 @@
             </div>
             <form action="/appraisal/report/" method="POST">
                 <div class="text_center">
-                    <label for="ubicacion" class="label_ubicacion">
-                        <input id="input_ubicacion" placeholder="Dirección, distrito, ciudad, …" type="text" name="ubicacion" class="input_ubicacion" autocomplete="off">  
+                    <label for="ubicacion" class="label_ubicacion active bold">
+                        <input value="Av. Cuba N° 639 - 2B, Jesús María 15072" id="input_ubicacion" placeholder="Dirección, distrito, ciudad, …" type="text" name="ubicacion" class="input_ubicacion" autocomplete="off">  
                     </label>        
                     <span class="f12 ind_span">Arrastra el marcador en el mapa para afinar la dirección</span>  
                 </div>
                 <label for="tipo_operacion" class="bold label_select">
                     <select name="operation_type" class="select" id="tipo_operacion">
+                        <option disabled selected value="">Tipo de operación</option>
                         <option value="Venta">Venta</option>
                         <option value="Alquilar">Alquilar</option>
                     </select>
@@ -47,6 +48,7 @@
 
                 <label for="tipo_propiedad" class="bold label_select">
                     <select name="listing_type" class="select" id="tipo_propiedad">
+                        <option disabled selected value="">Tipo de inmueble</option>
                         <option value="Casas">Casa</option>
                         <option value="Departamentos">Departamentos</option>
                         <option value="Locales Comerciales">Locales Comerciales</option>
@@ -65,35 +67,59 @@
                     </select>
                 </label>
 
-                <label for="area" class="bold label_text">
-                    <input placeholder="Área Total" type="text" name="area" class="integer_input" id="area" required="">                                
+                <label for="area" id="label_area_total" class="bold label_text">
+                    <input onkeydown="return event.keyCode !== 69" maxlength="4" placeholder="Área Total" type="number" name="area" class="integer_input" id="area">  
+                    <p class="over_input_text">Área Total&nbsp;<span id="area_value_span">120</span>&nbsp;m2</p>                              
                 </label>
 
-                <label for="year" class="bold label_text">
-                    <input placeholder="Antigüedad" type="text" name="age" class="integer_input" id="area" required="">                                
+                <label for="area_construida" id="label_construida" class="inactive bold label_text">
+                    <input onkeydown="return event.keyCode !== 69" maxlength="4" placeholder="Área Construida" type="number" name="area_construida" class="integer_input" id="area_construida">  
+                    <p class="over_input_text">Área Construida&nbsp;<span id="area_construida_value_span">120</span>&nbsp;m2</p>                              
+                </label>
+
+                <label for="area_terreno" id="label_terreno" class="inactive bold label_text">
+                    <input onkeydown="return event.keyCode !== 69" maxlength="4" placeholder="Área Terreno" type="number" name="area_terreno" class="integer_input" id="area_terreno">  
+                    <p class="over_input_text">Área Terreno&nbsp;<span id="area_terreno_value_span">120</span>&nbsp;m2</p>                              
+                </label>
+
+                <label for="year" id="label_antiguedad" class="bold label_text">
+                    <input onkeydown="return event.keyCode !== 69" maxlength="3" placeholder="Antigüedad" type="number" name="age" class="integer_input" id="year">   
+                    <p class="over_input_text"><span id="age_value_span">10</span>&nbsp;años</p>                                        
                 </label>
 
                 <div class="habitaciones bold" id="habitaciones_container">
                     <p class="hab_title">Habitaciones</p>
                     <div>                    
                         <label for="id_num_bedrooms_1" class="label_hab">
-                            <input type="radio" name="num_bedrooms" value="1" class="label_radio" id="id_num_bedrooms_1" required="">1
+                            <input type="radio" name="num_bedrooms" value="1" class="label_radio" id="id_num_bedrooms_1" >1
                         </label>
                         <label for="id_num_bedrooms_2" class="label_hab">
-                            <input type="radio" name="num_bedrooms" value="2" class="label_radio" id="id_num_bedrooms_2" required="">2
+                            <input type="radio" name="num_bedrooms" value="2" class="label_radio" id="id_num_bedrooms_2" >2
                         </label>
                         <label for="id_num_bedrooms_3" class="label_hab">
-                            <input type="radio" name="num_bedrooms" value="3" class="label_radio" id="id_num_bedrooms_3" required="">3
+                            <input type="radio" name="num_bedrooms" value="3" class="label_radio" id="id_num_bedrooms_3" >3
                         </label>
                         <label for="id_num_bedrooms_4" class="label_hab">
-                            <input type="radio" name="num_bedrooms" value="4" class="label_radio" id="id_num_bedrooms_4" required="">4+
+                            <input type="radio" name="num_bedrooms" value="4" class="label_radio" id="id_num_bedrooms_4" >4+
+                        </label>
+                    </div>
+                </div>
+
+                <div class="inactive amoblado bold" id="amoblado_container">
+                    <p class="hab_title">Amoblado</p>
+                    <div>                    
+                        <label for="amoblado_si" class="label_hab">
+                            <input type="radio" name="amoblado" value="Si" class="label_radio" id="amoblado_si" >Sí
+                        </label>
+                        <label for="amoblado_no" class="label_hab">
+                            <input type="radio" name="amoblado" value="No" class="label_radio" id="amoblado_no" >No
                         </label>
                     </div>
                 </div>
                 <input type="hidden" name="latitude" id="lat" value="-12.04318">
                 <input type="hidden" name="longitude" id="lng" value="-77.02823999999998">
                 <input type="hidden" name="address" id="address" value="Calle Loreto 232, Cercado de Lima 15093, Peru">
-                <button type="submit" class="btn_start f14 bold white">VALUAR INMUEBLE</button>
+                <button type="submit" disabled  class="btn_start f14 bold white">VALUAR INMUEBLE</button>
             </form>
         </div>
         <div id="map">

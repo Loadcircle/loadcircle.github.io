@@ -221,6 +221,22 @@ hr{
 
 /* Filtros  ---------------------------------------------------------------------------------------------------------------- */
 
+input:focus,
+input:-webkit-autofill:focus,
+input,
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
 #filtros_view{
     position: relative;
     padding-top: 3.66vw;
@@ -257,9 +273,19 @@ hr{
 #filtros_view .integer_input{
     width: 100%;
     height: 2.9vw;  
-    border: solid 1px #415262;
+    border: solid 1px #D4DBE2;
     background-color: #ffffff;
     border-radius: var(--br); 
+}
+#filtros_view label.active #input_ubicacion, 
+#filtros_view label.active select, 
+#filtros_view label.active .integer_input{
+    border-color: #415262;
+}
+#filtros_view #input_ubicacion:focus, 
+#filtros_view select:focus, 
+#filtros_view .integer_input:focus{
+    border-color: #415262;
 }
 #filtros_view select{
     padding-left: 1vw;
@@ -267,6 +293,9 @@ hr{
 }
 #filtros_view .integer_input{
     padding-left: 1vw;
+}
+#filtros_view .integer_input::placeholder{
+    color: #415262
 }
 .btn_start{  
     height: 3.3vw;
@@ -297,13 +326,14 @@ hr{
     background-repeat: no-repeat;
     margin: auto;
 }
-#habitaciones_container{
+#habitaciones_container, #amoblado_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 1vw;
 }
-#habitaciones_container > div{
+#habitaciones_container > div,
+#amoblado_container > div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -332,6 +362,25 @@ hr{
     display: block;
     margin-top: -.5vw;
 }
+.over_input_text{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2vw;
+    border-radius: var(--br);
+    left: 1vw;
+    align-items: center;    
+    cursor: auto;
+    display: none;
+}
+.value > .over_input_text{
+    display: flex;
+}
+.inactive{
+    display: none!important;
+}
 
 
 
@@ -339,11 +388,7 @@ hr{
 
 
 
-
-
-
-
-
+ 
 
 
 
