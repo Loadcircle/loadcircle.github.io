@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <nav class="main_nav">
+            <div>
+                <a href="#"><img src="assets/logo_b.png" alt="logo valia" class="main_logo"></a>
+            </div>
+            <div>
+                <!-- <ul class="nav_menu">
+                    <li>
+                        <a class="f14 bold" target="_blank" href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="f14 bold" target="_blank" href="#">Blog</a>
+                    </li>
+                </ul> -->
+            </div>
+        </nav>
+    </header>
+    
+    <div id="filtros_view">
+        <div class="form_filtros_box f14">
+            <div class="form_title">
+                <p class="white bold f18">Ingresa la descripción del inmueble</p>
+            </div>
+            <form action="/appraisal/report/" method="POST">
+                <div class="text_center">
+                    <label for="ubicacion" class="label_ubicacion">
+                        <input id="input_ubicacion" placeholder="Dirección, distrito, ciudad, …" type="text" name="ubicacion" class="input_ubicacion" autocomplete="off">  
+                    </label>        
+                    <span class="f12 ind_span">Arrastra el marcador en el mapa para afinar la dirección</span>  
+                </div>
+                <label for="tipo_operacion" class="bold label_select">
+                    <select name="operation_type" class="select" id="tipo_operacion">
+                        <option value="Venta">Venta</option>
+                        <option value="Alquilar">Alquilar</option>
+                    </select>
+                </label>
+
+                <label for="tipo_propiedad" class="bold label_select">
+                    <select name="listing_type" class="select" id="tipo_propiedad">
+                        <option value="Casas">Casa</option>
+                        <option value="Departamentos">Departamentos</option>
+                        <option value="Locales Comerciales">Locales Comerciales</option>
+                        <option value="Locales Industriales">Locales Industriales</option>
+                        <option value="Terrenos">Terrenos</option>
+                        <option value="Oficinas">Oficinas</option>
+                    </select>
+                </label>
+
+                <label for="subtipo_propiedad" class="bold label_select">
+                    <select name="listing_type_detail" class="select" id="subtipo_propiedad">
+                        <option value="Casa">Casa</option>
+                        <option value="Casa en Condominio">Casa en Condominio</option>
+                        <option value="Casa de Campo">Casa de Campo</option>
+                        <option value="Casa de Playa">Casa de Playa</option>
+                    </select>
+                </label>
+
+                <label for="area" class="bold label_text">
+                    <input placeholder="Área Total" type="text" name="area" class="integer_input" id="area" required="">                                
+                </label>
+
+                <label for="year" class="bold label_text">
+                    <input placeholder="Antigüedad" type="text" name="age" class="integer_input" id="area" required="">                                
+                </label>
+
+                <div class="habitaciones bold" id="habitaciones_container">
+                    <p class="hab_title">Habitaciones</p>
+                    <div>                    
+                        <label for="id_num_bedrooms_1" class="label_hab">
+                            <input type="radio" name="num_bedrooms" value="1" class="label_radio" id="id_num_bedrooms_1" required="">1
+                        </label>
+                        <label for="id_num_bedrooms_2" class="label_hab">
+                            <input type="radio" name="num_bedrooms" value="2" class="label_radio" id="id_num_bedrooms_2" required="">2
+                        </label>
+                        <label for="id_num_bedrooms_3" class="label_hab">
+                            <input type="radio" name="num_bedrooms" value="3" class="label_radio" id="id_num_bedrooms_3" required="">3
+                        </label>
+                        <label for="id_num_bedrooms_4" class="label_hab">
+                            <input type="radio" name="num_bedrooms" value="4" class="label_radio" id="id_num_bedrooms_4" required="">4+
+                        </label>
+                    </div>
+                </div>
+                <input type="hidden" name="latitude" id="lat" value="-12.04318">
+                <input type="hidden" name="longitude" id="lng" value="-77.02823999999998">
+                <input type="hidden" name="address" id="address" value="Calle Loreto 232, Cercado de Lima 15093, Peru">
+                <button type="submit" class="btn_start f14 bold white">VALUAR INMUEBLE</button>
+            </form>
+        </div>
+        <div id="map">
+
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
