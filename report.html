@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/reporte.css">
+</head>
+<body>
+
+    <div id="reporte">
+        <div id="menu_reporte" class="active">
+            <div>
+                <img class="logo active_logo" src="assets/logo.png" alt="logo valia">
+                <img class="logo inactive_logo" src="assets/logo_b.png" alt="logo valia">
+            </div>
+            <div class="items_column">
+                <a href="#" class="item_menu">
+                    <img src="assets/location.png" alt="icono">
+                    <span class="f14 bold_b">Reporte AMC</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="reporte_box">
+            <div class="nav_top_reporte">
+                <button id="btn_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="report_body">
+                <div class="titulo_2nd_nav">
+                    <div>
+                        <h1 class="f24">
+                            Análisis de Mercado Comparativo (AMC)
+                        </h1>
+                    </div>
+                    <div>
+                        <button class="btn_share uppercase"><img src="assets/location.png" alt="compartir">COMPARTIR</button>
+                        <button class="btn_download uppercase"><img src="assets/location.png" alt="descargar">DESCARGAR</button>
+                    </div>                
+                </div>
+                <div class="price_details_box">
+                    <div class="details_box f14">
+                        <div class="details_title">
+                            <p class="bold_b uppercase">Inmueble Analizado</p>
+                        </div>
+                        <div class="datails_content">
+                            <p class="bold_b">Av. Cuba N° 639 - 2B Jesús María</p>
+                            <p class="bold">Departamento Flat</p>
+                            <p class="bold">Área Total 120 m2</p>
+                            <p class="bold">2 Habitaciones | 5 Años</p>
+                            <p class="bold">5 Años</p>
+                        </div>
+                    </div>
+
+                    <div class="price_box f14">
+                        <div class="price_title">
+                            <p class="bold_b uppercase">Valor de Venta Estimado</p>
+                            <button id="trigger_price">Tipo de valuación <img src="assets/location.png" alt="arrow_down"></button>
+                        </div>
+                        <div class="datails_content">
+                            <div>
+                                <h2 class="bold">USD 232, 750</h2>  <h2 class="bold">USD 1, 930 m2</h2>
+                            </div>
+                            <p class="bold f12">Valor promedio de los inmuebleIngresa tu Valor sugerido a juicio experto del agente inmobiliario opinión expertas similares seleccionados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="similar_box">
+                    <div class="similar_title">
+                        <p class="f14 uppercase bold_b">Inmuebles similares</p>
+                    </div>
+                    <div class="leyenda_similares">
+                        <div><img src="assets/location.png" alt="home" srcset=""> <p class="f12 bold_b uppercase">Inmueble</p></div>
+                        <div> <span class="leyenda_bolita"></span> <p class="f12 bold_b uppercase">Similitud Alta</p></div>
+                        <div> <span class="leyenda_bolita"></span> <p class="f12 bold_b uppercase">Similitud Media</p></div>
+                        <div> <span class="leyenda_bolita"></span> <p class="f12 bold_b uppercase">Similitud Baja</p></div>
+                    </div>
+                    <div id="mapbox_map"></div>
+                    
+                    <table id="sortable_table" class="sort">
+                        <thead>
+                            <tr>
+                            <th role="columnheader">#</th>
+                            <th role="columnheader">Similitud</th>
+                            <th role="columnheader">Distancia</th>
+                            <th role="columnheader">Tipologia</th>
+                            <th role="columnheader">Precio (USD)</th>
+                            <th role="columnheader">Precio m<sup>2</sup> (USD)</th>
+                            <th role="columnheader">Area (m<sup>2</sup>)</th>
+                            <th role="columnheader">Habitaciones</th>
+                            <th role="columnheader" data-sort-method='none'>Antiguedad</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>   
+                            <tr class="analizado_row">
+                                <td><img src="" alt="casa"></td>
+                                <td>120 m</td>
+                                <td>Departamento</td>
+                                <td>120 m2</td>
+                                <td>USD 259,573</td>
+                                <td>USD 2,043</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td><label for="active_property"><input disabled class="check_property" id="active_property_1" type="radio"></label></td>
+                            </tr>
+                            
+                            <tr class="tr_common_item loop_{{i.latitude|slice:'4:'}} {{i.similarity}}">
+                                <td><span class="loop_number">1</span></td>
+                                <td>120 m</td>
+                                <td>Departamento</td>
+                                <td>120 m2</td>
+                                <td>USD 259,573</td>
+                                <td>USD 2,043</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td><label for="active_property"><input class="check_property" id="active_property_1" type="radio"></label></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <p class="f12 bold"><span class="bold_b">IMPORTANTE:</span> Buscamos departamentos en un radio de 300 metros 
+                            alrededor de la ubicación señalada y encontramos 483 inmuebles a la venta 
+                            durante los últimos 12 meses. <a href="#" class="green_anchor">Conoce más aquí.</a></p>
+                    </div>
+
+                </div>
+
+                <div class="closure_box f12">
+                    <div class="bold">
+                        <!-- <p>Solicitante: Margarita Pereyra - PN 000</p>     <span>|</span>      -->
+                        <p>Fecha de Solicitud: 07/06/19 - 18:26 pm</p>     <span>|</span>     <p>Fecha de Evaluación: 07/06/19 - 18:28 pm</p>
+                    </div>
+                    <div>
+                        <a class="green_anchor" href="#">Fuentes de datos</a>     <span>|</span>     <a class="green_anchor" href="#">Términos y condiciones generales</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recomendar_box">
+                <p class="bold">¿Qué tan probable es que recomiendes este reporte a tus colegas o clientes?</p>
+                <form>
+                    <p class="f14 bold">1 Nada probable</p>
+                    <label class="value" for="value_1">
+                        <input type="radio" name="valuation" value="1" id="value_1">
+                        <span>1</span>
+                    </label>
+                    <label class="value" for="value_2">
+                        <input type="radio" name="valuation" value="2" id="value_2">
+                        <span>2</span>
+                    </label>
+                    <label class="value" for="value_3">
+                        <input type="radio" name="valuation" value="3" id="value_3">
+                        <span>3</span>
+                    </label>
+                    <label class="value" for="value_4">
+                        <input type="radio" name="valuation" value="4" id="value_4">
+                        <span>4</span>
+                    </label>
+                    <label class="value" for="value_5">
+                        <input type="radio" name="valuation" value="5" id="value_5">
+                        <span>5</span>
+                    </label>
+                    <label class="value" for="value_6">
+                        <input type="radio" name="valuation" value="6" id="value_6">
+                        <span>6</span>
+                    </label>
+                    <label class="value" for="value_7">
+                        <input type="radio" name="valuation" value="7" id="value_7">
+                        <span>7</span>
+                    </label>
+                    <label class="value" for="value_8">
+                        <input type="radio" name="valuation" value="8" id="value_8">
+                        <span>8</span>
+                    </label>
+                    <label class="value" for="value_9">
+                        <input type="radio" name="valuation" value="9" id="value_9">
+                        <span>9</span>
+                    </label>
+                    <label class="value" for="value_10">
+                        <input type="radio" name="valuation" value="10" id="value_10">
+                        <span>10</span>
+                    </label>
+                    <p class="f14 bold">10 Muy probable</p>
+                </form>
+            </div>
+
+            <footer>
+                <p class="f14 white text_center bold">
+                    2019 Valia USA Corp
+                </p>
+            </footer>
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <script src="js/report.js"></script>
+</body>
+</html>

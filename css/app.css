@@ -10,6 +10,10 @@
     src: url('../fonts/Lato-Black.ttf');
     font-weight: black;
     font-family: black;
+}@font-face{
+    src: url('../fonts/Lato-Bold.ttf');
+    font-weight: bold;
+    font-family: bold;
 }
 :root{
     --br: 2.2vw;
@@ -36,6 +40,12 @@ img{
 }
 .bold, .bold *, strong{
     font-family: regular;
+}
+.bold_b, .bold_b *{
+    font-family: bold;
+}
+.uppercase, .uppercase *{
+    text-transform: uppercase;
 }
 .black, .black *{
     font-family: black;
