@@ -59,6 +59,9 @@ img{
 .f12, .f12 *{
     font-size: .87vw;
 }
+.f10, .f10 *{
+    font-size: .73vw;
+}
 h1, h1 *{
     font-size: 3.51vw;
 }
@@ -67,6 +70,12 @@ h1, h1 *{
 }
 .text_center{
     text-align: center;
+}
+.text_left{
+    text-align: left;
+}
+.text_right{
+    text-align: right;
 }
 /*  Navegador ------------------------------------------------------------------------------------------------- */
 header{

@@ -127,6 +127,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     height: 13.17vw;
+    position: relative;
 }
 .details_title p{
     margin: 0;
@@ -190,6 +191,7 @@
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
     margin-top: 1.6vw;
+    margin-bottom: 1.6vw;
 }
 .leyenda_similares{
     display: flex;
@@ -253,6 +255,161 @@
     font-family: bold;
     text-decoration: underline;
 }
+.similar_box > div:nth-last-child(1){
+    display: flex;
+    align-items: center;
+    padding-left: 1.6vw;
+    height: 3.66vw;
+}
+.price_options {
+    position: absolute;  
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    height: 17.56vw;
+    width: 53.44vw;
+    padding: 0 1.6vw;
+    top: 3.7vw;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-2vw);
+    transition: all .8s;
+    display: none;
+}
+.price_options.active{
+    display: block;
+}
+.price_options > div{
+    display: flex;
+    justify-content: space-between;  
+}
+.price_option{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    cursor: pointer;
+    width: 32%;
+}
+.option_box{
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 0 1vw;
+    height: 11vw;
+}
+.usar_box > span{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #1ed582;
+    border-radius: 50%;
+    width: 1.1vw;
+    height: 1.1vw;
+    margin-right: .4vw
+}
+.price_option.active .usar_box > span > span{
+    background-color: #1ed582;
+    display: block;
+    border-radius: 50%;
+    width: .7vw;
+    height: .7vw;
+}
+.usar_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1ed582;
+    font-family: regular;
+    margin-top: .5vw;
+}
+.grey{
+    color: #798590;
+}
+.tinu_range_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tinu_range_price > span{
+    min-width: 2px;
+    width: .15vw;
+    height: 1.9vw;
+    border-radius: 30px;
+    background-color: #1ed582;
+    margin: 0 1vw;
+}
+.tinu_range_price > div > p{
+    margin: 0;
+}
+.option_box > .f10 {
+    margin: 0;
+}
+.option_box > .f18 {
+    margin: .5vw 0;
+}
+.price_option:nth-child(2) .option_box .f24{
+    margin: 1.2vw 0;
+}
+.price_option:nth-child(3){
+
+}
+.price_option.active .option_box {
+    border: solid 1px #30e190;
+}
+.personal_price_label{
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: auto!important;
+}
+#personal_price{
+    border-radius: 2.2vw;
+    border: solid 1px #415262;
+    background-color: #ffffff;
+    height: 2.56vw;
+    width: 100%;
+    padding-left: 3.65vw;
+}
+.personal_price_label::before{
+    position: absolute;
+    left: .8vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: 'USD';
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.active.visible{
+    opacity: 1;
+    transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,4 +463,153 @@
 }
 .value.active span{
     color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos de la tabla */
+#sortable_table{
+    border-collapse: collapse;    
+    width: 100%;
+}
+/* thead, thead tr{
+    display: block;
+} */
+tr{
+    border-bottom: 1px solid #dfe0e0;
+    height: 2.92vw;
+}
+thead th{
+    text-transform: uppercase;
+    font-size: .73vw;
+    font-family: bold;
+    padding: 1.25vw 0;
+    text-align: center;
+    cursor: pointer;
+}
+thead th *{
+    font-size: .73vw;
+    font-family: bold;
+}
+thead th img{
+    width: 0.7vw;
+    min-width: 13px;
+    margin-left: .2vw;
+}
+tbody td{
+    text-align: center;
+    font-family: regular;
+}
+.analizado_row{
+    background-color: #eff0f2;
+}
+tbody tr{
+    height: 2.92vw;
+}
+.loop_number{
+    border-radius: 50%;
+    color: #fff;
+    width: 1.61vw;
+    height: 1.61vw;
+    font-family: regular;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Alta .loop_number{
+    background-color: #1ed582;
+}
+.Media .loop_number{
+    background-color: #87a7c4;
+}
+.Baja .loop_number{
+    background-color: #ff6868;
+}
+.check_table {
+    position: relative;
+    display: block;
+    width: 1.3vw;
+    height: 1.3vw;  
+    background-color: #fff;
+    border: solid 1.5px #415262;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.analizado_row .check_table{
+    opacity: .7;
+}
+.check_table::before{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1vw;
+    height: 1vw;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/checked.svg);
+    margin: auto;
+}
+.check_table.active::before{
+    content: '';
+}
+.check_table input{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mapbox_map{
+    min-height: 20vw;
+    background-color: #d4dbe2;
 }

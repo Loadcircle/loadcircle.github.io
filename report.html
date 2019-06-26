@@ -59,18 +59,103 @@
                         </div>
                     </div>
 
-                    <div class="price_box f14">
-                        <div class="price_title">
+                    <div class="price_box">
+                        <div class="price_title f14">
                             <p class="bold_b uppercase">Valor de Venta Estimado</p>
                             <button id="trigger_price">Tipo de valuación <img src="assets/location.png" alt="arrow_down"></button>
                         </div>
-                        <div class="datails_content">
+                        <div class="datails_content f14">
                             <div>
                                 <h2 class="bold">USD 232, 750</h2>  <h2 class="bold">USD 1, 930 m2</h2>
                             </div>
                             <p class="bold f12">Valor promedio de los inmuebleIngresa tu Valor sugerido a juicio experto del agente inmobiliario opinión expertas similares seleccionados</p>
                         </div>
+
+                        <div class="price_options text_center">
+                            <p class="f18">Selecciona el tipo de valuación</p>
+                            <div>
+                                <div class="price_option active">
+                                    <div class="option_box text_center">
+                                        <p class="f14 grey bold_b">
+                                            Estadística
+                                        </p>
+                                        <p class="f10 bold_b">
+                                            Mediana
+                                        </p>
+                                        <p class="f18 bold">
+                                            USD 259,573
+                                        </p>
+                                        <div class="tinu_range_price">
+                                            <div class="text_left">
+                                                <p class="f10 bold">
+                                                    Rango Inferior
+                                                </p>
+                                                <p class="f12 trp_p">
+                                                    USD 221,064
+                                                </p>
+                                            </div>
+                                            <span></span>
+                                            <div class="text_right">
+                                                <p class="f10 bold">
+                                                    Rango Superior
+                                                </p>
+                                                <p class="f12 trp_p">
+                                                    USD 281,346
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f14 usar_box">
+                                        <span>
+                                            <span></span>
+                                        </span>
+                                        Usar
+                                    </div>
+                                </div>
+                                <div class="price_option">
+                                    <div class="option_box">
+                                        <p class="f14 grey bold_b">
+                                            Por Comparables
+                                        </p>
+                                        <p class="f24 bold">
+                                            USD 259,573
+                                        </p>
+                                        <p class="f12 grey bold">
+                                            Valor promedio de los inmuebles similares seleccionados
+                                        </p>
+                                    </div>
+                                    <div class="f14 usar_box">
+                                        <span>
+                                            <span></span>
+                                        </span>
+                                        Usar
+                                    </div> 
+                                </div>
+                                <div class="price_option">
+                                    <div class="option_box">
+                                        <p class="f14 grey bold_b">
+                                            Experta
+                                        </p>
+
+                                        <label for="personal_price" class="personal_price_label f18 bold">
+                                            <input type="text" name="personal_price" value="232,750" id="personal_price">
+                                        </label>
+
+                                        <p class="f12 grey bold">
+                                            Ingresa tu Valor sugerido a juicio experto del agente inmobiliario opinión experta
+                                        </p>
+                                    </div>
+                                    <div class="f14 usar_box">
+                                        <span>
+                                            <span></span>
+                                        </span>
+                                        Usar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="similar_box">
@@ -88,21 +173,21 @@
                     <table id="sortable_table" class="sort">
                         <thead>
                             <tr>
-                            <th role="columnheader">#</th>
-                            <th role="columnheader">Similitud</th>
-                            <th role="columnheader">Distancia</th>
-                            <th role="columnheader">Tipologia</th>
-                            <th role="columnheader">Precio (USD)</th>
-                            <th role="columnheader">Precio m<sup>2</sup> (USD)</th>
-                            <th role="columnheader">Area (m<sup>2</sup>)</th>
-                            <th role="columnheader">Habitaciones</th>
-                            <th role="columnheader" data-sort-method='none'>Antiguedad</th>
+                            <th colspan="1" role="columnheader">Similitud <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Distancia <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Tipologia <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Precio (USD) <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Precio m<sup>2</sup> (USD) <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Area (m<sup>2</sup>) <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader">Habitaciones <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader" data-sort-method='none'>Antiguedad <img src="assets/arrows.png" alt="arrows"></th>
+                            <th colspan="1" role="columnheader" data-sort-method='none'> <label for="pick_all" class="check_table active"><input type="checkbox" checked name="pick_all" id="pick_all"></label> </th>
                             </tr>
                         </thead>
             
                         <tbody>   
-                            <tr class="analizado_row">
-                                <td><img src="" alt="casa"></td>
+                            <tr class="f14 analizado_row">
+                                <td><img src="assets/location.png" alt="casa"></td>
                                 <td>120 m</td>
                                 <td>Departamento</td>
                                 <td>120 m2</td>
@@ -110,10 +195,10 @@
                                 <td>USD 2,043</td>
                                 <td>2</td>
                                 <td>5</td>
-                                <td><label for="active_property"><input disabled class="check_property" id="active_property_1" type="radio"></label></td>
+                                <td><label for="active_property" class="check_table active"><input disabled checked class="not_calc" id="active_property" name="main_property" type="checkbox"></label></td>
                             </tr>
                             
-                            <tr class="tr_common_item loop_{{i.latitude|slice:'4:'}} {{i.similarity}}">
+                            <tr class="f14 tr_common_item loop_{{i.latitude|slice:'4:'}} {{i.similarity}} Alta">
                                 <td><span class="loop_number">1</span></td>
                                 <td>120 m</td>
                                 <td>Departamento</td>
@@ -122,14 +207,38 @@
                                 <td>USD 2,043</td>
                                 <td>2</td>
                                 <td>5</td>
-                                <td><label for="active_property"><input class="check_property" id="active_property_1" type="radio"></label></td>
+                                <td><label for="active_property_1" class="check_table active"><input id="active_property_1" value="259573" checked name="table_property" type="checkbox"></label></td>
+                            </tr>
+
+                            <tr class="f14 tr_common_item loop_{{i.latitude|slice:'4:'}} {{i.similarity}} Media">
+                                <td><span class="loop_number">2</span></td>
+                                <td>120 m</td>
+                                <td>Departamento</td>
+                                <td>120 m2</td>
+                                <td>USD 259,573</td>
+                                <td>USD 2,043</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td><label for="active_property_2" class="check_table active"><input id="active_property_2" value="259573" checked name="table_property" type="checkbox"></label></td>
+                            </tr>
+
+                            <tr class="f14 tr_common_item loop_{{i.latitude|slice:'4:'}} {{i.similarity}} Baja">
+                                <td><span class="loop_number">3</span></td>
+                                <td>120 m</td>
+                                <td>Departamento</td>
+                                <td>120 m2</td>
+                                <td>USD 259,573</td>
+                                <td>USD 2,043</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td><label for="active_property_3" class="check_table active"><input id="active_property_3" value="259573" checked name="table_property" type="checkbox"></label></td>
                             </tr>
                             
                         </tbody>
                     </table>
 
                     <div>
-                        <p class="f12 bold"><span class="bold_b">IMPORTANTE:</span> Buscamos departamentos en un radio de 300 metros 
+                        <p class="f12 bold"><span class="bold_b">NOTA:</span> Buscamos departamentos en un radio de 300 metros 
                             alrededor de la ubicación señalada y encontramos 483 inmuebles a la venta 
                             durante los últimos 12 meses. <a href="#" class="green_anchor">Conoce más aquí.</a></p>
                     </div>
