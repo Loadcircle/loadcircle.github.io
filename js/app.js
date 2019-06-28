@@ -47,66 +47,68 @@
     const label_antiguedad = document.getElementById('label_antiguedad');
     const label_area_total = document.getElementById('label_area_total');
 
-    tipo_operacion_select.addEventListener('change', function(){
-        if(this.value == 'Venta'){
-            amoblado_container.classList.add('inactive')
-        }
-        if(this.value == 'Alquilar'){
-            amoblado_container.classList.remove('inactive');
-        }
-    });
-    tipo_propiedad_select.addEventListener('change', function(){
+    if(tipo_operacion_select){
+        tipo_operacion_select.addEventListener('change', function(){
+            if(this.value == 'Venta'){
+                amoblado_container.classList.add('inactive')
+            }
+            if(this.value == 'Alquilar'){
+                amoblado_container.classList.remove('inactive');
+            }
+        });
+        tipo_propiedad_select.addEventListener('change', function(){
 
-        if(this.value == 'Departamentos'){
-            habitaciones_container.classList.remove('inactive');
-            label_area_total.classList.remove('inactive');
-            label_antiguedad.classList.remove('inactive');
-            label_construida.classList.add('inactive');
-            label_terreno.classList.add('inactive');
-            // select_change_propiedad(departamento_options);
-        }
-        if(this.value == 'Casas'){
-            label_area_total.classList.remove('inactive');
-            label_antiguedad.classList.remove('inactive');
-            label_construida.classList.remove('inactive');
-            label_terreno.classList.add('inactive');
-            habitaciones_container.classList.add('inactive');
-            // select_change_propiedad(casa_options);
-        }
-        if(this.value == 'Oficinas'){
-            label_area_total.classList.remove('inactive');
-            label_antiguedad.classList.remove('inactive');
-            label_construida.classList.add('inactive');
-            label_terreno.classList.add('inactive');
-            habitaciones_container.classList.add('inactive');
-            // select_change_propiedad(oficinas_options);
-        }
-        if(this.value == 'Locales Comerciales'){
-            label_area_total.classList.remove('inactive');
-            label_antiguedad.classList.remove('inactive');
-            label_construida.classList.add('inactive');
-            label_terreno.classList.add('inactive');
-            habitaciones_container.classList.add('inactive');
-            // select_change_propiedad(locales_comerciales_options);
-        }
-        if(this.value == 'Locales Industriales'){
-            label_area_total.classList.remove('inactive');
-            label_construida.classList.remove('inactive');
-            label_antiguedad.classList.add('inactive');
-            label_terreno.classList.add('inactive');
-            habitaciones_container.classList.add('inactive');
-            // select_change_propiedad(locales_industriales_options);
-        }
-        if(this.value == 'Terrenos'){
-            label_terreno.classList.remove('inactive');
-            label_area_total.classList.add('inactive');
-            label_construida.classList.add('inactive');
-            label_antiguedad.classList.add('inactive');
-            habitaciones_container.classList.add('inactive');
-            // select_change_propiedad(terrenos_options);
-        }
+            if(this.value == 'Departamentos'){
+                habitaciones_container.classList.remove('inactive');
+                label_area_total.classList.remove('inactive');
+                label_antiguedad.classList.remove('inactive');
+                label_construida.classList.add('inactive');
+                label_terreno.classList.add('inactive');
+                // select_change_propiedad(departamento_options);
+            }
+            if(this.value == 'Casas'){
+                label_area_total.classList.remove('inactive');
+                label_antiguedad.classList.remove('inactive');
+                label_construida.classList.remove('inactive');
+                label_terreno.classList.add('inactive');
+                habitaciones_container.classList.add('inactive');
+                // select_change_propiedad(casa_options);
+            }
+            if(this.value == 'Oficinas'){
+                label_area_total.classList.remove('inactive');
+                label_antiguedad.classList.remove('inactive');
+                label_construida.classList.add('inactive');
+                label_terreno.classList.add('inactive');
+                habitaciones_container.classList.add('inactive');
+                // select_change_propiedad(oficinas_options);
+            }
+            if(this.value == 'Locales Comerciales'){
+                label_area_total.classList.remove('inactive');
+                label_antiguedad.classList.remove('inactive');
+                label_construida.classList.add('inactive');
+                label_terreno.classList.add('inactive');
+                habitaciones_container.classList.add('inactive');
+                // select_change_propiedad(locales_comerciales_options);
+            }
+            if(this.value == 'Locales Industriales'){
+                label_area_total.classList.remove('inactive');
+                label_construida.classList.remove('inactive');
+                label_antiguedad.classList.add('inactive');
+                label_terreno.classList.add('inactive');
+                habitaciones_container.classList.add('inactive');
+                // select_change_propiedad(locales_industriales_options);
+            }
+            if(this.value == 'Terrenos'){
+                label_terreno.classList.remove('inactive');
+                label_area_total.classList.add('inactive');
+                label_construida.classList.add('inactive');
+                label_antiguedad.classList.add('inactive');
+                habitaciones_container.classList.add('inactive');
+                // select_change_propiedad(terrenos_options);
+            }
 
-    });
+        });
+    }
 
     if(filtros_view_form){
         
@@ -189,5 +191,19 @@
         e.addEventListener('change', val_max_number);
     });
 
+    if(window.innerWidth < 768){
+        let btn_menu_standar = document.getElementById('btn_menu_standar');
+        let menu_id_mob = document.getElementById('menu_id_mob');
+
+        if(btn_menu_standar){
+            btn_menu_standar.addEventListener('click', function(){
+                if(menu_id_mob.classList.contains('active')){
+                    menu_id_mob.classList.remove('active')
+                }else{
+                    menu_id_mob.classList.add('active')
+                }
+            });
+        };
+    };
 
 })();
