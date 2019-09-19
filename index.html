@@ -8,75 +8,552 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-
+    
     <header>
-        <nav class="main_nav">
-            <div>
-                <button class="for_mob" id="btn_menu_standar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="#"><img src="assets/logo_b.png" alt="logo valia" class="main_logo"></a>
-            </div>
-            <div>
-                <ul class="nav_menu" id="menu_id_mob">
-                    <li class="for_mob active">
-                        <a class="f14 bold " target="_blank" href="#">Homepage</a>
-                    </li>
-                    <li>
-                        <a class="f14 bold" target="_blank" href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="f14 bold" target="_blank" href="#">Blog</a>
-                    </li>
-                </ul>
-            </div>
+        <nav>
+            <img src="assets/logo.svg" alt="logo cineplanet" class="logo">
+            <ul class="white">
+                <li>
+                    <a href="#" class="nav_item">Funcionalidades</a>
+                </li>
+                <li>
+                    <a href="#" class="nav_item">Canales</a>
+                </li>
+                <li>
+                    <a href="#" class="nav_item">Tips digitales</a>
+                </li>
+                <li>
+                    <a href="#" class="nav_item">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a class="blue_btn" href="#">Descarga nuestra app</a>
+                </li>
+                <li>
+                    <a class="border_btn light_blue" href="#">Ir a la web</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <div class="primera_busqueda_view">
-        <div>
-            <div class="caja_flotante">
-                <h1>Averigua el <strong>valor</strong>
-                    de un <strong>inmueble</strong></h1>
-                <p class="f24">Conócelo en segundos, con tan sólo unos clics</p>
+    <div id="home_section" class="bg_dark_blue">
+        <img class="trama_rosa float_home" src="assets/trama_rosa.svg" alt="trama rosa">
+        <div class="home_flex">
+            <div>
+                <h1 class="white"> 
+                    <strong>Canales digitales Cineplanet</strong> 
+                    #Educación digital
+                </h1>
+            </div>
+            <img src="assets/main_phone.png" alt="telefono">
+        </div>
+    </div>
 
-                <div class="buscador">
-                    <form id="buscador_form" action="mapa.html" method="POST">
-                        <label for="ubicacion" class="label_ubicacion">
-                            <input placeholder="Escribe la dirección o distrito" type="text" name="ubicacion" id="input_ubicacion" class="bold f14 input_ubicacion" autocomplete="off">            
-                            <span class="f14 error_span">Dirección o distrito inválido.</span>
-                        </label>
-                        <input id="lat" type="hidden" name="lat" value="">
-                        <input id="lng" type="hidden" name="lng" value="">
-                        <button type="submit" class="white black f14 btn_buscar">BUSCAR</button>
-                    </form>
+    <div id="que_puedo_hacer">
+        <div class="titles_box">
+            <h2>¿Qué puedo hacer?</h2>
+            <p>
+                Todas nuestras funcionalidades están disponibles en 
+                todos nuestros canales : <strong>web, app, boletería express.</strong>
+            </p>
+        </div>
+
+        <div class="qph_tab">
+            <div class="qph_first_row">
+                <div class="active_qph white f18">
+                    <img src="assets/" alt="canchas">
+                    <div class="socios">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <p class="f30">Afiliación socios</p>
+                        <hr>
+                        <ul>
+                            <li>1. Dale click al botón de la personita</li>
+                            <li>2. Presiona el botón únete</li>
+                            <li>3. Llena todos tus datos</li>
+                            <li>4. Te llegará un mail a tu correo resgistrado con la confirmación.</li>
+                            <li>5. Disfruta de todos tus beneficios</li>
+                            <li><span class="f16">*No olvides aceptar los términos y condiciones.</span></li>
+                            <button class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <p class="f30"></p>
+                        <hr>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <button class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <p class="f30"></p>
+                        <hr>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <button class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <img src="assets/.png" alt="icono">
+                        <p class="f30"></p>
+                        <hr>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <button class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="qph_item">
+                    <div class="light_blue">
+                        <h3>Canjea tus
+                                beneficios</h3>
+                        <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="qph_second_row">
+                <div>
+                    <div class="qph_item for_mob">
+                        <div class="light_blue">
+                            <h3>Canjea tus
+                                    beneficios</h3>
+                            <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="qph_item">
+                        <div class="light_blue">
+                            <h3>Compra en
+                                    boletería</h3>
+                            <p>Consigue tus entradas sin colas ni esperas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="qph_item">
+                        <div class="light_blue">
+                            <h3>Compra en
+                                    dulcería</h3>
+                            <p>Consigue tus entradas sin colas ni esperas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="qph_item">
+                        <div class="light_blue">
+                            <h3>Canjea tus
+                                    cupones</h3>
+                            <p>Canjea tus cupones corporativos digitales.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="img_col_2">
-        </div>
     </div>
 
-    <div class="first_content">
-        <p class="f24">
-            ¿Cómo <strong>obtiene el valor estimado</strong> por Valia?
-        </p>
-        <p>
-            Valia estima rangos de precio de venta y de alquiler para un inmueble en base a su ubicación y sus características.
-            <br><br>
-            El cálculo se realiza mediante un sistema de algoritmos estadísticos desarrollados por Valia basados en información pública y privada de cientos de miles de observaciones recogidas del mercado y compartida por nuestros usuarios.
-            <br><br>
-            Su principal objetivo es servir como un punto de partida para aproximar el precio al que se ofrecería un inmueble en el mercado.
-        </p>
-        <hr>
+    <div class="por_donde">
+        <div class="titles_box">
+            <h2>¿Por dónde puedo hacerlo?</h2>
+        </div>
+
+        <div class="tabs_pd">
+            <div>
+                <div class="pd_item">
+                    <img src="assets/trama_verde.svg" alt="trama">     
+                    <h2 class="pd_title green">app</h2>
+                    <div class="img_content_pd">
+                        <img src="" alt="telefono" class="inactive_img">
+                        <img src="" alt="telefono" class="active_img">
+                    </div>
+                    <div class="contenido_pd_item">
+                        <div class="descarga_app">
+                            <p>Descarga la app:</p>
+                            <a href="#" class="blue_btn">
+                                <img src="" alt="android">
+                            </a>
+                            <a href="#" class="blue_btn">
+                                <img src="" alt="ios">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="pd_item">
+                    <img src="assets/trama_azul.svg" alt="trama"> 
+                    <h2 class="pd_title light_blue">web</h2>
+                    <div class="img_content_pd">
+                        <img src="" alt="laptop" class="inactive_img">
+                        <img src="" alt="laptop" class="active_img">
+                    </div>
+                    <div class="contenido_pd_item white">
+                        <div class="m_m">
+                            <div>
+                                <p>1M <br> usuarios</p>
+                            </div>
+                            <div>
+                                <p>2M <br> de compras</p>
+                            </div>
+                        </div>
+                        <a href="#" class="blue_btn">Ir a la web</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="pd_item">
+                    <img src="assets/trama_rosa.svg" alt="trama"> 
+                    <h2 class="pd_title green">módulo</h2>
+                    <div class="img_content_pd">
+                        <img src="" alt="modulo" class="inactive_img">
+                        <img src="" alt="modulo" class="active_img">
+                    </div>
+                    <div class="contenido_pd_item light_blue">
+                        <p>Encuéntralos en estos cines:</p>
+                        <ul>
+                            <li>CP Salaverry </li>
+                            <li>CP Alcazar</li>
+                            <li>CP Caminos del Inca</li>
+                            <li>CP Mall del Sur</li>
+                            <li>CP Primavera    </li>
+                            <li>CP Brasil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    
-    <footer>
-        <p class="f14 white text_center bold">
-                2019 Valia USA Corp
-        </p>
+
+    <div class="la_lupa">
+        <div class="titles_box">
+            <h2>Hazlo más rápido con estos TIPS</h2>
+        </div>
+
+        <div class="slider_tips">
+            <div>
+                <div class="tips_item">
+                    <p>El trailer</p>
+                    <img class="main_img" src="assets/.png" alt="">
+                    <div class="white tip_content_box">
+                        <p>
+                            <strong>Encuentra lo que necesitas más 
+                            rápido</strong> Busca por : Actor, cine,
+                            película y género.
+                        </p>
+                    </div>
+                    <img src="assets/.png" alt="zoom" class="zoom_img">
+                </div>
+                <div class="tips_item">
+                    <p>Tu cine favorito</p>
+                    <img class="main_img" src="assets/.png" alt="">
+                    <div class="white tip_content_box">
+                        <p>
+                            <strong>Encuentra lo que necesitas más 
+                            rápido</strong> Busca por : Actor, cine,
+                            película y género.
+                        </p>
+                    </div>
+                    <img src="assets/.png" alt="zoom" class="zoom_img">
+                </div>
+                <div class="tips_item">
+                    <p>La Lupita</p>
+                    <img class="main_img" src="assets/.png" alt="">
+                    <div class="white tip_content_box">
+                        <p>
+                            <strong>Encuentra lo que necesitas más 
+                            rápido</strong> Busca por : Actor, cine,
+                            película y género.
+                        </p>
+                    </div>
+                    <img src="assets/.png" alt="zoom" class="zoom_img">
+                </div>
+                <div class="tips_item">
+                    <p>Las butacas</p>
+                    <img class="main_img" src="assets/.png" alt="">
+                    <div class="white tip_content_box">
+                        <p>
+                            <strong>Encuentra lo que necesitas más 
+                            rápido</strong> Busca por : Actor, cine,
+                            película y género.
+                        </p>
+                    </div>
+                    <img src="assets/.png" alt="zoom" class="zoom_img">
+                </div>
+                <div class="tips_item">
+                    <p>Novedades</p>
+                    <img class="main_img" src="assets/.png" alt="">
+                    <div class="white tip_content_box">
+                        <p>
+                            <strong>Encuentra lo que necesitas más 
+                            rápido</strong> Busca por : Actor, cine,
+                            película y género.
+                        </p>
+                    </div>
+                    <img src="assets/.png" alt="zoom" class="zoom_img">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="preguntas">
+        <div class="titles_box">
+            <h2>Preguntas frecuentes</h2>
+        </div>
+        <img src="assets/" alt="cancha" class="float_left">
+        <img src="assets/" alt="cancha" class="float_right">
+        <div class="preguntas_box">
+
+            <div class="pregunta_item">
+                <div class="pi_visible_area">
+                    <p>
+                        <strong>¿Cobran comisión adicional por comprar online?</strong>
+                        <br><br>
+                        ¡No! No cobramos ningún tipo de comisión adicional por 
+                        comprar online.
+                    </p>
+                </div>
+                <div class="pi_hide_area">
+                    <p>        
+                        Los precios que manejamos en nuestros canales digitales 
+                        son los mismos que nuestra boletería. Nunca pagarás de más 
+                        comprando en Cineplanet Online.
+                    </p>
+                </div>
+            </div>
+            <div class="pregunta_item">
+                <div class="pi_visible_area">
+                    <p>
+                        <strong>Ya compré mis entradas ¿Cómo ingreso a mi función?</strong>
+                        <br><br>
+                        Muestra el QR de tu orden de compra al momento de ingresar a la sala. 
+                        <br><br>
+                    </p>
+                    <button class="ver_mas_btn">Ver más +</button>
+                </div>
+                <div class="pi_hide_area">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="pregunta_item">
+                <div class="pi_visible_area">
+                    <p>
+                        <strong>Compré productos de Dulcería ¿Cómo los recojo?</strong>
+                        <br><br>
+                        Si compraste en nuestra Dulcería Online, dirígete con tu QR a la zona de recojo Online. 
+                        <br><br>
+                    </p>
+                    <button class="ver_mas_btn">Ver más +</button>
+                </div>
+                <div class="pi_hide_area">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!-- Desaparecer -->
+
+            <div class="pregunta_item">
+                <div class="pi_visible_area">
+                    <p>
+                        <strong></strong>
+                        <br><br>
+                        
+                        <br><br>
+                    </p>
+                    <button class="ver_mas_btn">Ver más +</button>
+                </div>
+                <div class="pi_hide_area">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+                
+            <div class="pregunta_item">
+                    <div class="pi_visible_area">
+                        <p>
+                            <strong></strong>
+                            <br><br>
+                            
+                            <br><br>
+                        </p>
+                        <button class="ver_mas_btn">Ver más +</button>
+                    </div>
+                    <div class="pi_hide_area">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            <!-- Desaparecer -->
+            <button class="pink_btn">Ver más preguntas</button>
+
+        </div>
+
+    </div>
+
+    <footer class="white">
+        <div>
+            <img class="logo" src="assets/logo.svg" alt="logo cineplanet">
+        </div>
+        <div>
+            <div>
+                <a class="blue_btn" href="#">Descarga nuestra app</a>
+                <a class="border_btn light_blue" href="#">Ir a la web</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Funcionalidades</a></li>
+                    <li><a href="#">Canales</a></li>
+                    <li><a href="#">Tips digitales</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <script src="js/app.js"></script>

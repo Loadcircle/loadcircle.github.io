@@ -39,9 +39,23 @@
             };
         });
     });
+    
+    let estimate_value_m2 = 0;
+    let estimate_value = 0;
+    function calc_comparable_price(){
+        var iteraction = 0;
+        estimate_value_m2 = 0;
+        checkboxs.forEach(function(e, i){
+            if(e.checked){
+
+                estimate_value_m2 += parseInt(e.getAttribute('value'));
+                iteraction = i;
+            };
+        });
+        estimate_value = estimate_value_m2/iteraction;
+    };
 
     checkboxs.forEach(function(e, k){
-
         if(k == 0){
             e.addEventListener('click', function(){
                 if(this.checked){
@@ -55,15 +69,21 @@
                         l.parentNode.classList.remove('active');
                     });
                 };
+                calc_comparable_price();
+                console.log(estimate_value_m2, estimate_value);
             });
         }else{
             e.addEventListener('change', function(){
+                calc_comparable_price();
+                console.log(estimate_value_m2, estimate_value)
                 if(this.checked){
                     this.parentNode.classList.add('active');
                 }else{
                     this.parentNode.classList.remove('active');
                 };
                 val_all_check();
+                calc_comparable_price();
+                console.log(estimate_value_m2, estimate_value);
             });
         }
 
@@ -207,6 +227,8 @@
             });
         });
     };
+
+
 
 
 
