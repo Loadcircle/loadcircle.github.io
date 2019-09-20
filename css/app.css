@@ -6,9 +6,13 @@
     src: url('../fonts/TTNorms-Bold.otf');
     font-weight: bold;
     font-family: bold;
+}@font-face{
+    src: url('../fonts/TT\ NormsProBold.otf');
+    font-weight: bold;
+    font-family: pro_bold;
 }
 :root{
-    --br: 2.2vw;
+    --padding: 9.37vw;
 }
 body{
     margin: 0;
@@ -20,6 +24,11 @@ body{
     font-size: 1.04vw;
     box-sizing: border-box;
     outline: none;
+}
+h1, h1 *,
+h2, h2 *, 
+.pro_norm, .pro_norm *{
+    font-family: pro_bold;
 }
 li{
     list-style: none;
@@ -33,11 +42,17 @@ button{
 img{
     max-width: 100%;
 }
+.regular, .regular *{
+    font-family: regular;
+}
 .bold, .bold *, strong{
     font-family: bold;
 }
 .uppercase, .uppercase *{
     text-transform: uppercase;
+}
+.f24, .f24 *{
+    font-size: 1.25vw;
 }
 .f30, .f30 *{
     font-size: 1.56vw;
@@ -56,4 +71,92 @@ h1, h1 *{
 }
 .text_right{
     text-align: right;
+}
+.bg_dark_blue{
+    background-color: #001d5e;
+}
+.bg_light_blue{
+    background-color: #1098f9;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.64vw;
+    height: 5.57vw;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.logo{
+    width: 16.66vw;
+}
+.blue_btn{
+    border-radius: 10px;
+    background-color: #1098f9;
+    padding: 1.04vw 1.35vw;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+.border_btn{  
+    border: solid 1px #1098f9;
+    color: #1098f9;
+    padding: 1.04vw 1.35vw;
+    border-radius: 10px;
+    background-color: none;
+    text-align: center;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+header ul li{
+    margin-left: 1.35vw;
+}
+header ul a{
+    transition: opacity .6s;
+}
+header ul a:not(.blue_btn):not(.border_btn){    
+    opacity: .7;
+}
+header ul a:hover{
+    opacity: 1!important;
+}
+#home_section{
+    position: relative;
+}
+.float_home{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 7.8vw;
+}
+.home_flex{
+    display: flex;
+    padding-top: 5.57vw;
+    min-height: 100vh;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 var(--padding);
+}
+.home_flex > img{
+    width: 38.9vw;
+}
+.home_flex > div{
+    align-self: center;
+    margin-top: 4vw;
+}
+.home_flex h1{
+    width: 30vw;
 }
