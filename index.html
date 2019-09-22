@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css">    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     
@@ -63,7 +64,7 @@
             <div class="qph_first_row">
                 <div class="active_qph white f18">
                     <img src="assets/trama_cancha_azul.png" alt="canchas">
-                    <div class="socios">
+                    <div class="socios active">
                         <img src="assets/user.png" alt="icono">
                         <img src="assets/unete.png" alt="icono">
                         <!-- <img src="assets/.png" alt="icono"> -->
@@ -97,7 +98,7 @@
                     </div>
                     <div class="beneficios">
                         <img src="assets/peliculas.png" alt="icono">
-                        <img src="assets/butacas.png" alt="icono">
+                        <img src="assets/pantalla.png" alt="icono">
                         <img src="assets/tbeneficios.png" alt="icono">
                         <p class="f30">Canjea tus beneficios</p>
                         <hr>
@@ -130,7 +131,7 @@
                     </div>
                     <div class="boleteria">
                         <img src="assets/rey_leon.png" alt="icono">
-                        <img src="assets/butacas.png" alt="icono">
+                        <img src="assets/pantalla.png" alt="icono">
                         <img src="assets/visa.png" alt="icono">
                         <p class="f30">Canjea en boletería</p>
                         <hr>
@@ -146,28 +147,41 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <div class="qph_item">
+                <div class="light_blue">
+                    <div class="qph_item active">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Canjea tus
+                            <h3 class="bold">Canjea tus
                                     beneficios</h3>
                             <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
                         </div>
                     </div>
                     <div class="qph_item">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Canjea tus
+                            <h3 class="bold">Canjea tus
                                     beneficios</h3>
                             <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="qph_second_row">
-                <div>
-                    <div class="qph_item for_mob">
+            <div class="qph_second_row light_blue">
+                <div class="for_mob">
+                    <div class="qph_item ">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Canjea tus
+                            <h3 class="bold">Canjea tus
+                                    beneficios</h3>
+                            <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="for_mob">
+                    <div class="qph_item ">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
+                        <div class="light_blue">
+                            <h3 class="bold">Canjea tus
                                     beneficios</h3>
                             <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
                         </div>
@@ -175,8 +189,9 @@
                 </div>
                 <div>
                     <div class="qph_item">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Compra en
+                            <h3 class="bold">Compra en
                                     boletería</h3>
                             <p>Consigue tus entradas sin colas ni esperas.</p>
                         </div>
@@ -184,8 +199,9 @@
                 </div>
                 <div>
                     <div class="qph_item">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Compra en
+                            <h3 class="bold">Compra en
                                     dulcería</h3>
                             <p>Consigue tus entradas sin colas ni esperas.</p>
                         </div>
@@ -193,8 +209,9 @@
                 </div>
                 <div>
                     <div class="qph_item">
+                        <img src="assets/arrow_pick.svg" alt="arrow">
                         <div class="light_blue">
-                            <h3>Canjea tus
+                            <h3 class="bold">Canjea tus
                                     cupones</h3>
                             <p>Canjea tus cupones corporativos digitales.</p>
                         </div>
@@ -206,12 +223,12 @@
 
     <div class="por_donde">
         <div class="titles_box">
-            <h2>¿Por dónde puedo hacerlo?</h2>
+            <h2>Nuestros Canales</h2>
         </div>
 
         <div class="tabs_pd">
             <div>
-                <div class="pd_item">
+                <div class="pd_item telefono">
                     <img src="assets/trama_verde.svg" alt="trama">     
                     <h2 class="pd_title green">app</h2>
                     <div class="img_content_pd">
@@ -232,15 +249,15 @@
                 </div>
             </div>
             <div>
-                <div class="pd_item">
+                <div class="pd_item laptop">
                     <img src="assets/trama_azul.svg" alt="trama"> 
                     <h2 class="pd_title light_blue">web</h2>
                     <div class="img_content_pd">
                         <img src="assets/lap_un.png" alt="laptop" class="inactive_img">
                         <img src="assets/lap_ac.png" alt="laptop" class="active_img">
                     </div>
-                    <div class="contenido_pd_item white">
-                        <div class="m_m">
+                    <div class="contenido_pd_item">
+                        <div class="m_m bold f30">
                             <div>
                                 <p>1M <br> usuarios</p>
                             </div>
@@ -253,22 +270,27 @@
                 </div>
             </div>
             <div>
-                <div class="pd_item">
+                <div class="pd_item modulo">
                     <img src="assets/trama_rosa.svg" alt="trama"> 
-                    <h2 class="pd_title green">módulo</h2>
+                    <h2 class="pd_title pink">módulo</h2>
                     <div class="img_content_pd">
                         <img src="assets/modulo_un.png" alt="modulo" class="inactive_img">
                         <img src="assets/modulo_ac.png" alt="modulo" class="active_img">
                     </div>
                     <div class="contenido_pd_item light_blue">
-                        <p>Encuéntralos en estos cines:</p>
+                        <p class="bold">Encuéntralos en estos cines:</p>
                         <ul>
                             <li>CP Salaverry </li>
                             <li>CP Alcazar</li>
-                            <li>CP Caminos del Inca</li>
-                            <li>CP Mall del Sur</li>
                             <li>CP Primavera</li>
                             <li>CP Brasil</li>
+                            <li>CP Mall del Sur</li>
+                            <li>CP Huancayo</li>
+                            <li>CP Norte</li>
+                            <li>CP Trujillo Real Plaza</li>
+                            <li>CP Arequipa Mall</li>
+                            <li>CP San Borja</li>
+                            <li>CP Caminos del Inca</li>
                         </ul>
                     </div>
                 </div>
@@ -282,10 +304,10 @@
             <h2>Hazlo más rápido con estos TIPS</h2>
         </div>
 
-        <div class="slider_tips">
+        <div id="slider_tips" class="slider_tips">
             <div>
                 <div class="tips_item">
-                    <p>El trailer</p>
+                    <p class="f30">El trailer</p>
                     <img class="main_img" src="assets/trailer.png" alt="">
                     <div class="white tip_content_box">
                         <p>
@@ -296,8 +318,10 @@
                     </div>
                     <img src="assets/trailer_zoom.png" alt="zoom" class="zoom_img">
                 </div>
+            </div>
+            <div>
                 <div class="tips_item">
-                    <p>Tu cine favorito</p>
+                    <p class="f30">Tu cine favorito</p>
                     <img class="main_img" src="assets/cine.png" alt="">
                     <div class="white tip_content_box">
                         <p>
@@ -308,8 +332,10 @@
                     </div>
                     <img src="assets/cine_zoom.png" alt="zoom" class="zoom_img">
                 </div>
+            </div>
+            <div>
                 <div class="tips_item">
-                    <p>La Lupita</p>
+                    <p class="f30">La Lupita</p>
                     <img class="main_img" src="assets/lupa.png" alt="">
                     <div class="white tip_content_box">
                         <p>
@@ -320,8 +346,10 @@
                     </div>
                     <img src="assets/zoom_lupa.png" alt="zoom" class="zoom_img">
                 </div>
+            </div>
+            <div>
                 <div class="tips_item">
-                    <p>Las butacas</p>
+                    <p class="f30">Las butacas</p>
                     <img class="main_img" src="assets/butacas.png" alt="">
                     <div class="white tip_content_box">
                         <p>
@@ -332,8 +360,10 @@
                     </div>
                     <img src="assets/botacas_zoom.png" alt="zoom" class="zoom_img">
                 </div>
+            </div>
+            <div>
                 <div class="tips_item">
-                    <p>Novedades</p>
+                    <p class="f30">Novedades</p>
                     <img class="main_img" src="assets/novedades.png" alt="">
                     <div class="white tip_content_box">
                         <p>
@@ -353,8 +383,8 @@
         <div class="titles_box">
             <h2>Preguntas frecuentes</h2>
         </div>
-        <img src="assets/" alt="cancha" class="float_left">
-        <img src="assets/" alt="cancha" class="float_right">
+        <img src="assets/cancha_naranja.png" alt="cancha" class="float_left">
+        <img src="assets/cancha_azul.png" alt="cancha" class="float_right">
         <div class="preguntas_box">
 
             <div class="pregunta_item">
@@ -365,6 +395,7 @@
                         ¡No! No cobramos ningún tipo de comisión adicional por 
                         comprar online.
                     </p>
+                    <button class="ver_mas_btn">Ver más +</button>
                 </div>
                 <div class="pi_hide_area">
                     <p>        
@@ -380,7 +411,6 @@
                         <strong>Ya compré mis entradas ¿Cómo ingreso a mi función?</strong>
                         <br><br>
                         Muestra el QR de tu orden de compra al momento de ingresar a la sala. 
-                        <br><br>
                     </p>
                     <button class="ver_mas_btn">Ver más +</button>
                 </div>
@@ -578,7 +608,7 @@
                 <a class="border_btn light_blue" href="#">Ir a la web</a>
             </div>
             <div>
-                <ul>
+                <ul class="f24">
                     <li><a href="#">Funcionalidades</a></li>
                     <li><a href="#">Canales</a></li>
                     <li><a href="#">Tips digitales</a></li>
@@ -588,6 +618,8 @@
         </div>
     </footer>
 
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>                 
     <script src="js/app.js"></script>
 </body>
 </html>
