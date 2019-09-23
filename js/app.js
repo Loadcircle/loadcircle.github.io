@@ -99,7 +99,7 @@ $('#slider_tips').slick({
           centerMode: true,
           centerPadding: '20px',
           arrow: false,
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
     ]
