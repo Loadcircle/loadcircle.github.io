@@ -10,21 +10,39 @@ $(document).ready(function(){
 
 
 $('.ver_mas_btn').click(function(){
+
+    $('.ver_mas_btn').text('+')
     $('.pregunta_item').removeClass('active');
-    $(this).parent().parent().addClass('active');
+    if($(this).hasClass('active')){
+      $(this).parent().parent().parent().removeClass('active');
+      $(this).removeClass('active');
+    }else{
+      $(this).parent().parent().parent().addClass('active');
+      $(this).text('-');
+      $(this).addClass('active');
+    }
+  
+
+
+
+
 });
 
-
+var lack_preguntas = 0;
 $('.preguntas .pink_btn').click(function(){
-    for(var i = 4; i <= $('.pregunta_item').length; i++ ){
-        if(i == 4){
-            $('.pregunta_item').eq(i).fadeIn(700);   
-        }else{
-            $('.pregunta_item').eq(i).delay((250*i)).fadeIn(700);   
-        }
-        
+  if(lack_preguntas == 0){
+
+    for(var i = 4; i <= ($('.pregunta_item').length-4); i++ ){
+      $('.pregunta_item').eq(i).delay((250*i)).fadeIn(700);
     }
-    $(this).hide()
+    lack_preguntas = 1;
+  }else{    
+    for(var i = 8; i <= ($('.pregunta_item').length); i++ ){
+      $('.pregunta_item').eq(i).delay((100*i)).fadeIn(700);
+
+    }
+    $('.preguntas .pink_btn').addClass('unseen_btn')
+  }
 });
 
 
@@ -70,7 +88,14 @@ $('.right_video').click(function(){
 
 
 
-
+$('#slick_home').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  draggable: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+}); 
 
 $('#slider_tips').slick({
     centerMode: true,
@@ -105,6 +130,18 @@ $('#slider_tips').slick({
     ]
   }); 
   
+  $('#slick_home').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+    if(nextSlide == 1){
+      $('.trama_rosa.float_home').addClass('go_blue');
+      $('header nav').addClass('force_pink');
+    }else{
+      $('.trama_rosa.float_home').removeClass('go_blue');
+      $('header nav').removeClass('force_pink');
+    }
+    
+  });
+  
   $('#slider_tips').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
     $('.imgs_tips_items > div').removeClass('active');
@@ -112,7 +149,6 @@ $('#slider_tips').slick({
     
 
   });
-  
 
     $("a").on('click', function(event) {
   
@@ -148,6 +184,12 @@ $('#slider_tips').slick({
            }
       });
       
+      if($(window).scrollTop() > $('#que_puedo_hacer').offset().top){
+        $('header nav').removeClass('active');
+      }else{
+        $('header nav').addClass('active');
+      }
+
     });
 
 
@@ -181,6 +223,60 @@ $('#slider_tips').slick({
       if(getMobileOperatingSystem() == 'iOS'){
         $('.web_url').attr('href', ios_url)
       }
-     
+
+
+      var disable_latop = 0;
+      var disable_telefono = 0;
+      var disable_modulo = 0;
+
+      $('.pd_item.laptop').mouseenter(function(){
+        var pds = $(this).find('.counter_numer');
+        if(disable_latop == 0){
+          pds.each(function(){  
+            var $this = $(this);  
+            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+              duration: 1700,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.ceil(this.Counter));
+              }
+            });
+          });
+        }
+        disable_latop = 1;        
+      });
+      $('.pd_item.telefono').mouseenter(function(){
+        var pds = $(this).find('.counter_numer');
+        if(disable_telefono == 0){
+          pds.each(function(){  
+            var $this = $(this);  
+            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+              duration: 1700,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.ceil(this.Counter));
+              }
+            });
+          });
+        }
+        disable_telefono = 1;        
+      });
+      $('.pd_item.modulo').mouseenter(function(){
+        var pds = $(this).find('.counter_numer');
+        if(disable_modulo == 0){
+          pds.each(function(){  
+            var $this = $(this);  
+            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+              duration: 1700,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.ceil(this.Counter));
+              }
+            });
+          });
+        }
+        disable_modulo = 1;        
+      });
+
       
   });

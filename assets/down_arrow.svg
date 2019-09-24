@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.229" height="37.599" viewBox="0 0 31.229 37.599">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="left-arrow_3_" data-name="left-arrow (3)" transform="translate(-41.674 37.599) rotate(-90)">
+    <g id="Grupo_159" data-name="Grupo 159" transform="translate(0 41.674)">
+      <path id="Trazado_1648" data-name="Trazado 1648" class="cls-1" d="M35.485,54.34l.059.013H10.385l7.909-7.927a2.077,2.077,0,0,0,0-2.92l-1.231-1.231a2.059,2.059,0,0,0-2.906,0L.6,55.83a2.073,2.073,0,0,0,0,2.916L14.157,72.3a2.06,2.06,0,0,0,2.906,0l1.231-1.231a2.037,2.037,0,0,0,.6-1.453,1.975,1.975,0,0,0-.6-1.425l-8-7.971H35.513A2.131,2.131,0,0,0,37.6,58.114V56.373A2.09,2.09,0,0,0,35.485,54.34Z" transform="translate(0 -41.674)"/>
+    </g>
+  </g>
+</svg>

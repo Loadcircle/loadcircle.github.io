@@ -55,6 +55,9 @@ img{
 h1, h1 *{
     font-size: 3.125vw;
 }
+h1 > span, h1 > span{    
+    font-size: 2.08vw;
+}
 h2, h2 *{
     font-size: 2.08vw;
     margin: 0;
@@ -70,6 +73,9 @@ h3, h3 *{
 }
 .f16, .f16 *{
     font-size: .83vw;
+}
+.f18, .f18 *{
+    font-size: .93vw;
 }
 .white, .white *{
     color: #fff;
@@ -92,22 +98,57 @@ h3, h3 *{
 .light_blue, .light_blue *{
     color: #1098f9;
 }
-
+.bg_pink{
+    background-color: #f10c33;
+}
 /* --------------------------------------------------------------------------------------------------- */
 header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3.64vw;
-    height: 5.57vw;
+    height: 3.64vw;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    transition: background-color .6s;
+    background-color: #fff;
+}
+header nav.active{
+    background-color: #001d5e;
+}
+header nav.active.force_pink{
+    background-color: #f10c33;
+}
+header nav ul .nav_item{
+    padding: .5vw;
+    border-bottom: solid 1px transparent;
+}
+header nav ul .nav_item:hover,
+header nav ul .nav_item.active{
+    border-bottom: solid 1px #001d5e!important;
+}
+header nav.active ul a.nav_item:hover,
+header nav.active ul a.nav_item.active{
+    border-bottom: solid 1px #fff!important;
+}
+header nav.active ul a:not(.blue_btn):not(.border_btn){
+    color: #fff;    
 }
 .logo{
-    width: 16.66vw;
+    width: 12.18vw;
+    transition: all .6s;
+}
+.logo *{
+    transition: all .6s;
+}
+.active .logo *{
+    fill: #fff!important;
+}
+.active .logo #Trazado_1683{
+    fill: transparent!important;
 }
 .blue_btn{
     background-color: #1098f9;
-    padding: 1.04vw 1.35vw;
+    padding: .6vw 1.35vw;
     border-radius: 10px;
     text-align: center;
     color: #fff;
@@ -119,7 +160,7 @@ header nav{
 .border_btn{  
     border: solid 1px #1098f9;
     color: #1098f9;
-    padding: 1.04vw 1.35vw;
+    padding: .6vw 1.35vw;
     border-radius: 10px;
     background-color: transparent;
     text-align: center;
@@ -147,7 +188,9 @@ header ul a{
     transition: opacity .6s;
 }
 header ul a:not(.blue_btn):not(.border_btn){    
+    transition: all .6s;
     opacity: .7;
+    color: #001d5e
 }
 .nav_item.active{
     opacity: 1!important;
@@ -168,6 +211,11 @@ header ul a:hover{
     bottom: 0;
     margin: auto;
     width: 7.8vw;
+    z-index: 5;
+    transition: all .6s;
+}
+.float_home.go_blue *{
+    fill: #1098f9!important;
 }
 .home_flex{
     display: flex;
@@ -176,6 +224,7 @@ header ul a:hover{
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 var(--padding);
+    padding-left: 10.36vw;
 }
 .home_flex > img{
     width: 38.9vw;
@@ -186,6 +235,7 @@ header ul a:hover{
 }
 .home_flex h1{
     width: 30vw;
+    line-height: .9;
 }
 .titles_box{    
     margin: 3vw auto 2vw;
@@ -201,10 +251,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 15vw 2vw 3.64vw;
+    padding: 3vw 10vw;
 }  
 footer > div:nth-last-child(1){
     display: flex;
+    width: 24vw;
+    align-items: center;
 }
 
 footer > div:nth-last-child(1) > div:nth-child(1){
@@ -216,6 +268,39 @@ footer > div:nth-last-child(1) > div:nth-child(2){
 }
 footer .border_btn{
     margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.75vw;
+}
+footer > div:nth-child(1){
+    display: flex;
+}
+footer > div:nth-child(1) > div:nth-child(1){
+    margin-right: 3vw;
+}
+.descarga_app .blue_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.75vw;
+    height: 3.75vw;
+    padding: 0;
+}
+.descarga_app .blue_btn img{
+    width: 1.7vw;
+}
+.redes {
+    display: flex;
+}
+.redes > a img{
+    width: 2.96vw;
+    min-width: 2.96vw;
+    margin-left: 1.8vw;
+}
+.redes > a{
+    display: block;
 }
 footer ul{
     display: flex;
@@ -226,6 +311,7 @@ footer ul{
 
 .qph_first_row{
     display: flex;
+    flex-direction: row-reverse;
 }
 .active_qph{
     background-color: #1098f9;  
@@ -237,7 +323,7 @@ footer ul{
     justify-content: center;
     position: relative;
     width: 56.56vw;
-    margin-right: 1.04vw;
+    margin-left: 1.04vw;
 }
 .active_qph > div{
     position: relative;
@@ -374,8 +460,8 @@ footer ul{
 .active_qph > img{
     position: absolute;
     top: 0;
-    right: -7.8vw;
-    width: 16.25vw;
+    right: -3.6vw;
+    width: 11.25vw;
 }
 .active_qph > div > img{
     position: absolute;
@@ -390,6 +476,9 @@ footer ul{
     padding-right: 7vw;
     padding-top: 1vw;
     transition: background-color .6s;
+}
+.qph_item p{
+    margin-top: .5vw;
 }
 .qph_item:hover{
     background-color: #1098f934;
@@ -407,16 +496,21 @@ footer ul{
     margin-bottom: 1vw;
     width: 2.18vw;
     transition: all .6s;
+    opacity: 0;
+}
+.qph_item.active svg,
+.qph_item:hover svg{
+    opacity: 1;
 }
 .qph_item.active .cls-1{
     fill: #fff!important;
 }
 .qph_item > svg.diagonal{
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     margin-left: -.6vw;
 }
-.qph_item > svg.left{
-    transform: rotate(-90deg);
+.qph_item > svg.right{
+    transform: rotate(90deg);
     margin-left: -.5vw;
 }
 .qph_first_row > div:nth-child(2){
@@ -446,7 +540,7 @@ footer ul{
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border-radius: 1vw;
     position: relative;
-    height: 46vw;
+    height: 52vw;
     transition: background-color .6s;
 }
 .pd_item.laptop:hover{
@@ -542,7 +636,7 @@ footer ul{
     justify-content: center;
 }
 .descarga_app p{
-    margin-right: 2vw;
+    margin-right: 1.6vw;
 }
 .descarga_app a:nth-last-child(1){
     margin-left: 1vw;
@@ -571,7 +665,25 @@ footer ul{
     text-align: center;
     justify-content: space-around;
     height: 5.15vw;
-    margin-bottom: 4vw;
+    margin-bottom: 2vw;
+    opacity: 0;
+    transform: translateY(1vw);
+    transition: all .6s;
+}
+.pd_item:hover .m_m{
+    opacity: 1;
+    transform: none;
+    transition-delay: .3s;
+}
+.transition_canales_m{
+    transform: translateY(-6vw);
+    transition: all .6s;
+}
+.pd_item:hover .transition_canales_m{
+    transform: none;
+}
+.m_m * {
+    color: #fff!important;
 }
 .m_m > div{
     width: 100%;
@@ -639,12 +751,6 @@ footer ul{
 }
 .pregunta_item:nth-child(-n+4){
     display: block;
-}
-.ver_mas_btn{
-    color: #ff0248;
-    border: none;
-    background-color: transparent;
-    padding: 0;
 }
 .pi_hide_area{
     max-height: 0;
@@ -979,8 +1085,68 @@ img.close_modal{
 .for_mob{
     display: none;
 }
-
-
+.go_down {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5vw;
+    background-color: #ff277f;
+}
+.go_down img{
+    width: 1.5vw;
+}
+.force_blue{
+    background-color: #1098f9;
+}
+header .descarga_app .blue_btn{
+    width: 2.6vw;
+    height: 2.6vw;
+}
+header .descarga_app .blue_btn img {
+    width: 1.2vw;
+}
+header .descarga_app{
+    margin-left: 2vw;
+}
+header .descarga_app *{
+    color: #001d5e;
+}
+header .active .descarga_app *{
+    color: #fff;
+}
+.pi_visible_area > p:nth-child(1){
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.ver_mas_btn{
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    border: solid 1px #ff0248;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5vw;
+    min-height: 1.5vw;
+    color: #ff0248;
+}
+.unseen_btn{
+    animation: desapear 1s forwards;
+    animation-delay: 1s;
+}
+@keyframes desapear{
+    0%{
+        opacity: 1;
+        visibility: initial
+    }
+    50%{
+        opacity: 0;
+        visibility: initial
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 @media(max-width:768px){
 
     *{
@@ -1003,6 +1169,9 @@ img.close_modal{
     }
     .f16, .f16 *{
         font-size: 4.4vw;
+    }
+    .f18, .f18 *{
+        font-size: 4.6vw;
     }
     .pd_item h2{
         font-size:19.7vw;
