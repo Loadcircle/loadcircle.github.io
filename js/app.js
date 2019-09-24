@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
     $('.qph_item').click(function(){
-    $('.qph_item').removeClass('active');
-    $(this).addClass('active');
-    
-    $('.active_qph > div').removeClass('active');
-    $('.active_qph .'+ $(this).data().target).addClass('active');
-});
+      $('.qph_item').removeClass('active');
+      $(this).addClass('active');
+      
+      $('.to_do_items_actives').removeClass('active');
+      $('.active_qph .'+ $(this).data().target).addClass('active');
+  });
 
 
 $('.ver_mas_btn').click(function(){
@@ -94,6 +94,7 @@ $('#slick_home').slick({
   arrows: false,
   draggable: false,
   autoplay: true,
+  fade: true,
   autoplaySpeed: 4000,
 }); 
 
@@ -279,4 +280,45 @@ $('#slider_tips').slick({
       });
 
       
+
+      // Mobile -----------------------------------------------------------------------------------------------------------------------------------------
+
+      $('#slide_for').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        mobileFirst: true,
+        centerMode: true,
+        centerPadding: '60px',
+        asNavFor: '#slide_to',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: 'unslick'
+          },
+        ]
+      });
+
+
+      $('#slide_to').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '#slide_for',
+        mobileFirst: true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: 'unslick'
+          },
+        ]
+      });
+
+      
+
+    
+
+
   });
