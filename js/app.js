@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
+  if(window.innerWidth > 768){
     $('.qph_item').click(function(){
-      $('.qph_item').removeClass('active');
-      $(this).addClass('active');
-      
-      $('.to_do_items_actives').removeClass('active');
-      $('.active_qph .'+ $(this).data().target).addClass('active');
-  });
+        $('.qph_item').removeClass('active');
+        $(this).addClass('active');
+        
+        $('.to_do_items_actives').removeClass('active');
+        $('.active_qph .'+ $(this).data().target).addClass('active');
+    });
+  }
 
 
 $('.ver_mas_btn').click(function(){
@@ -284,13 +286,14 @@ $('#slider_tips').slick({
       // Mobile -----------------------------------------------------------------------------------------------------------------------------------------
 
       $('#slide_for').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         dots: false,
         mobileFirst: true,
         centerMode: true,
-        centerPadding: '60px',
+        focusOnSelect: true,
+        centerPadding: '100px',
         asNavFor: '#slide_to',
         responsive: [
           {
@@ -306,8 +309,10 @@ $('#slider_tips').slick({
         slidesToScroll: 1,
         asNavFor: '#slide_for',
         mobileFirst: true,
-        centerMode: true,
+        // centerMode: true,
+        // centerPadding: '30px',
         focusOnSelect: true,
+        arrows: false,
         responsive: [
           {
             breakpoint: 768,
