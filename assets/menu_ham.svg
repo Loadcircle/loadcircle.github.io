@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.2" height="37.2" viewBox="0 0 37.2 37.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1098f9;
+        stroke: #1098f9;
+      }
+    </style>
+  </defs>
+  <g id="menu_5_" data-name="menu (5)" transform="translate(0.5 0.5)">
+    <path id="Trazado_1676" data-name="Trazado 1676" class="cls-1" d="M18.1,0A18.1,18.1,0,1,0,36.2,18.1,18.121,18.121,0,0,0,18.1,0Zm0,34.907A16.807,16.807,0,1,1,34.907,18.1,16.826,16.826,0,0,1,18.1,34.907Z"/>
+    <path id="Trazado_1677" data-name="Trazado 1677" class="cls-1" d="M31.161,16H15.646a.646.646,0,1,0,0,1.293H31.161a.646.646,0,0,0,0-1.293Z" transform="translate(-5.304 -5.657)"/>
+    <path id="Trazado_1678" data-name="Trazado 1678" class="cls-1" d="M31.161,27H15.646a.646.646,0,0,0,0,1.293H31.161a.646.646,0,0,0,0-1.293Z" transform="translate(-5.304 -9.546)"/>
+    <path id="Trazado_1679" data-name="Trazado 1679" class="cls-1" d="M31.161,38H15.646a.646.646,0,1,0,0,1.293H31.161a.646.646,0,0,0,0-1.293Z" transform="translate(-5.304 -13.436)"/>
+  </g>
+</svg>

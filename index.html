@@ -7,11 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/app.css">    
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <meta property="og:image" content="assets/fb.png">
+    <!-- Hotjar Tracking Code for https://www.cineplanet.com.pe/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1499781,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
     
     <header class="bg_dark_blue">
         <nav class="active">
+            <img src="assets/menu_ham.svg" alt="menu hamburguesa" class="for_mob" id="menu_ham">
+
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="logo" width="240.333" height="55.193" viewBox="0 0 240.333 55.193">
                     <defs>
@@ -84,7 +99,16 @@
                     <a class="border_btn light_blue" target="_blank" href="https://www.cineplanet.com.pe">Ir a la web</a>
                 </li>
             </ul>
+            <div class="descarga_app f18 for_mob">
+                <a href="https://play.google.com/store/apps/details?id=com.cineplanet&amp;hl=es_PE" target="_blank" class="blue_btn">
+                    <img src="assets/android.svg" alt="android">
+                </a>
+                <a href="https://apps.apple.com/pa/app/cineplanet-perú/id523901218" target="_blank" class="blue_btn">
+                    <img src="assets/apple.svg" alt="ios">
+                </a>
+            </div>
         </nav>
+        
     </header>
 
     <div id="home_section" class="">
@@ -131,6 +155,7 @@
     </div>
 
     <div id="que_puedo_hacer">
+        <img src="assets/solo_cancha.png" alt="cancha" class="for_mob">
         <div class="titles_box">
             <h2>¿Qué puedo hacer?</h2>
             <p>
@@ -167,28 +192,6 @@
                             </div>
                         </div>
                         <div>                            
-                            <div class="to_do_items_actives dulceria">
-                                <img src="assets/dulceria.png" alt="icono">
-                                <img src="assets/taper.png" alt="icono">
-                                <img src="assets/visa.png" alt="icono">
-                                <p class="f30 bold">Canjea en dulcería</p>
-                                <hr>
-                                <div class="qph_row_active">
-                                        
-                                    <div>
-                                        <p>1. Ingresa a la app, web o boletería express.</p>
-                                        <p>2. Selecciona la opción de dulcería.</p>
-                                        <p>3. Escoge el combo que más te guste o crea uno.</p>                                
-                                    </div>
-                                    <div>
-                                        <p>5. Llena tus datos</p>
-                                        <p>6. Elige tu método de pago</p>
-                                        <button data-target="1"  class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>                            
                             <div class="to_do_items_actives beneficios">
                                 <img src="assets/peliculas.png" alt="icono">
                                 <img src="assets/pantalla.png" alt="icono">
@@ -209,6 +212,53 @@
                                         <p>3. Elige tus beneficios y canjéalos</p>
                                         <p>4. Si eres Oro o Black  también puedes canjear tus beneficios en dulcería.</p>
                                         <button data-target="2" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>                            
+                            <div class="to_do_items_actives boleteria">
+                                <img src="assets/rey_leon.png" alt="icono">
+                                <img src="assets/pantalla.png" alt="icono">
+                                <img src="assets/visa.png" alt="icono">
+                                <p class="f30 bold">Canjea en boletería</p>
+                                <hr>
+                                <div class="qph_row_active">
+                                    <div>
+                                        <p>
+                                                1. Ingresa a la app, web o boletería express.
+                                        </p>
+                                        <p>2. Selecciona tu funsión.</p>
+                                        <p>3.Selecciona tus butacas.</p>      
+                                        <p>4. Escoge el tipo de entrada y dale continuar.</p>                          
+                                    </div>
+                                    <div>
+                                        <p>5. Tendrás la opción de comprar tus combos y recogerlos directamente en el cine.</p>
+                                        <p>6. Ingresa tus datos.</p>
+                                        <p>7. Ingresa tu método de pago</p>
+                                        <button data-target="4" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div>                            
+                            <div class="to_do_items_actives dulceria">
+                                <img src="assets/dulceria.png" alt="icono">
+                                <img src="assets/taper.png" alt="icono">
+                                <img src="assets/visa.png" alt="icono">
+                                <p class="f30 bold">Canjea en dulcería</p>
+                                <hr>
+                                <div class="qph_row_active">
+                                        
+                                    <div>
+                                        <p>1. Ingresa a la app, web o boletería express.</p>
+                                        <p>2. Selecciona la opción de dulcería.</p>
+                                        <p>3. Escoge el combo que más te guste o crea uno.</p>                                
+                                    </div>
+                                    <div>
+                                        <p>5. Llena tus datos</p>
+                                        <p>6. Elige tu método de pago</p>
+                                        <button data-target="1"  class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
                                     </div>
                                 </div>
                             </div>
@@ -236,31 +286,6 @@
                                     </div>
                                 </div>
                                 
-                            </div>
-                        </div>
-                        <div>                            
-                            <div class="to_do_items_actives boleteria">
-                                <img src="assets/rey_leon.png" alt="icono">
-                                <img src="assets/pantalla.png" alt="icono">
-                                <img src="assets/visa.png" alt="icono">
-                                <p class="f30 bold">Canjea en boletería</p>
-                                <hr>
-                                <div class="qph_row_active">
-                                    <div>
-                                        <p>
-                                                1. Ingresa a la app, web o boletería express.
-                                        </p>
-                                        <p>2. Selecciona tu funsión.</p>
-                                        <p>3.Selecciona tus butacas.</p>      
-                                        <p>4. Escoge el tipo de entrada y dale continuar.</p>                          
-                                    </div>
-                                    <div>
-                                        <p>5. Tendrás la opción de comprar tus combos y recogerlos directamente en el cine.</p>
-                                        <p>6. Ingresa tus datos.</p>
-                                        <p>7. Ingresa tu método de pago</p>
-                                        <button data-target="4" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
-                                    </div>
-                                </div>                        
                             </div>
                         </div>
                     </div>
@@ -297,90 +322,93 @@
                     </div>
                 </div>
             </div>
-            <div id="slide_for" class="qph_second_row light_blue">
-                <div class="for_mob">
-                    <div data-target="socios" class="qph_item ">
-                        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:#1098f9}
-                                </style>
-                            </defs>
-                            <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                        </svg>   
-                        <div class="light_blue">
-                            <h3 class="bold">Afiliación socios</h3>
-                            <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+            <div>
+                <div id="slide_for" class="qph_second_row light_blue">
+                    <div class="for_mob">
+                        <div data-target="socios" class="qph_item ">
+                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Afiliación socios</h3>
+                                <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="for_mob">
+                        <div data-target="beneficios" class="qph_item ">
+                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Canjea tus beneficios</h3>
+                                <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-target="boleteria" class="qph_item">
+                            <svg class="diagonal" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Compra en
+                                        boletería</h3>
+                                <p>Consigue tus entradas sin colas ni esperas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-target="dulceria" class="qph_item">
+                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Compra en
+                                        dulcería</h3>
+                                <p>Consigue tus entradas sin colas ni esperas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-target="cupones" class="qph_item">
+                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Canjea tus
+                                        cupones</h3>
+                                <p>Canjea tus cupones corporativos digitales.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="for_mob">
-                    <div data-target="beneficios" class="qph_item ">
-                        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:#1098f9}
-                                </style>
-                            </defs>
-                            <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                        </svg>   
-                        <div class="light_blue">
-                            <h3 class="bold">Canjea tus beneficios</h3>
-                            <p>Disfruta de la experiencia Cineplanet con descuentos especiales.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div data-target="boleteria" class="qph_item">
-                        <svg class="diagonal" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:#1098f9}
-                                </style>
-                            </defs>
-                            <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                        </svg>   
-                        <div class="light_blue">
-                            <h3 class="bold">Compra en
-                                    boletería</h3>
-                            <p>Consigue tus entradas sin colas ni esperas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div data-target="dulceria" class="qph_item">
-                        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:#1098f9}
-                                </style>
-                            </defs>
-                            <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                        </svg>   
-                        <div class="light_blue">
-                            <h3 class="bold">Compra en
-                                    dulcería</h3>
-                            <p>Consigue tus entradas sin colas ni esperas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div data-target="cupones" class="qph_item">
-                        <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                            <defs>
-                                <style>
-                                    .cls-1{fill:#1098f9}
-                                </style>
-                            </defs>
-                            <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                        </svg>   
-                        <div class="light_blue">
-                            <h3 class="bold">Canjea tus
-                                    cupones</h3>
-                            <p>Canjea tus cupones corporativos digitales.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -423,7 +451,7 @@
         <div class="titles_box">
             <h2>Nuestros Canales</h2>
         </div>
-
+        <img src="assets/cancha_2.png" alt="cancha" class="for_mob">
         <div class="tabs_pd">
             <div>
                 <div class="pd_item charged telefono">
