@@ -122,16 +122,39 @@ header nav ul .nav_item{
     padding: .5vw;
     border-bottom: solid 1px transparent;
 }
-header nav ul .nav_item:hover,
+/* header nav ul .nav_item:hover,
 header nav ul .nav_item.active{
     border-bottom: solid 1px #001d5e!important;
 }
 header nav.active ul a.nav_item:hover,
 header nav.active ul a.nav_item.active{
     border-bottom: solid 1px #fff!important;
-}
+} */
 header nav.active ul a:not(.blue_btn):not(.border_btn){
     color: #fff;    
+}
+.nav_item {
+    position: relative;
+}
+.nav_item::before{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: -2.5%;
+    right: 0;
+    margin: auto;
+    bottom: -.7vw;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color .6s;
+}
+header nav ul .nav_item:hover:before,
+header nav ul .nav_item.active:before{
+    background-color: #001d5e!important;
+}
+header nav.active ul a.nav_item:hover:before,
+header nav.active ul a.nav_item.active:before{
+    background-color: #fff!important;
 }
 .logo{
     width: 12.18vw;
@@ -226,7 +249,7 @@ header ul a:hover{
     padding: 0 var(--padding);
     padding-left: 10.36vw;
 }
-.home_flex > img{
+.banner_home > img{
     width: 38.9vw;
 }
 .home_flex > div{
@@ -241,6 +264,8 @@ header ul a:hover{
     margin: 3vw auto 2vw;
     max-width: 34.16vw;
     text-align: center;
+    margin-top: 0;
+    padding-top: 3vw;
 }
 .titles_box > p{
     margin: 0;
@@ -355,6 +380,26 @@ footer ul{
 .qph_row_active{
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+}
+.to_do_items_actives > p{
+    opacity: 0;
+}
+.to_do_items_actives hr{
+    opacity: 0;
+}
+.to_do_items_actives.active hr,
+.to_do_items_actives.active > p,
+.to_do_items_actives.active .qph_row_active{
+    animation: show_opacity 1s forwards;
+}
+@keyframes show_opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .qph_row_active > div{
     max-width: 17.55vw;
@@ -1155,6 +1200,61 @@ header .active .descarga_app *{
     height: 1px;
     border: none;
 }
+.banner_home {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.bs {
+    position: absolute;
+    animation: home_pop_up .9s ease-in-out forwards;
+    opacity: 0;
+}
+.bs1 {
+    width: 10.1vw!important;
+    left: 3.2vw;
+    top: 2.2vw;
+}
+.bs2 {
+    width: 5.15vw!important;
+    top: 14vw;
+    left: 5vw;
+    animation-delay: .3s
+}
+.bs3 {
+    width: 6.66vw!important;
+    right: 14vw;
+    top: 11vw;
+    animation-delay: .6s
+}
+.bs4 {
+    width: 9.2vw!important;
+    left: 1.7vw;
+    bottom: 9vw;
+    animation-delay: .9s
+}
+.bs5 {
+    width: 7.18vw!important;
+    bottom: 10.7vw;
+    right: 15vw;
+    animation-delay: 1.2s
+}
+.bs6 {
+    width: 3.33vw!important;
+    bottom: 2.5vw;
+    right: 17.5vw;
+    animation-delay: 1.5s
+}
+@keyframes home_pop_up{
+    from{
+        opacity: 0;
+        transform: scale(.7);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
 @media(max-width:768px){
 
     .for_mob {
@@ -1206,6 +1306,7 @@ header .active .descarga_app *{
     .titles_box{
         max-width: 77%;
         margin: 9vw auto;
+        padding-top: 0;
     }
     .preguntas_box{
         display: block;
@@ -1222,7 +1323,7 @@ header .active .descarga_app *{
         flex-direction: column;
         overflow: hidden;
     }
-    .home_flex > img{
+    .banner_home > img{
         width: 120vw;
         margin: auto;
         max-width: none;
@@ -1852,4 +1953,61 @@ header .active .descarga_app *{
     header ul li {
         margin: 3vw 0;
     }
+    .banner_home {
+        position: relative;
+        overflow: hidden;    
+        left: 18vw;
+    }
+    
+    .to_do_items_actives.active hr,
+    .to_do_items_actives.active > p,
+    .to_do_items_actives.active .qph_row_active{
+        animation: none;
+    }
+    
+    .slick-current hr,
+    .slick-current > p,
+    .slick-current .qph_row_active{
+        animation: show_opacity 1s forwards!important;
+    }
+    .bs1 {
+        width: 32.1vw!important;
+        left: 9.2vw;
+        top: 6.2vw;
+    }
+    .bs2 {
+        width: 11.15vw!important;
+        top: 44vw;
+        left: 19vw;
+    }
+    .bs3 {
+        width: 16.66vw!important;
+        right: 46vw;
+        top: 36vw;
+    }
+    .bs4 {
+        width: 19.2vw!important;
+        left: 15.7vw;
+        bottom: 29vw;
+        animation-delay: .9s;
+    }
+    .bs5 {
+        width: 17.18vw!important;
+        bottom: 36.7vw;
+        right: 48vw;
+        animation-delay: 1.2s;
+    }
+    .bs6 {
+        width: 10.33vw!important;
+        bottom: 8.5vw;
+        right: 52.5vw;
+    }
+    .quick_fix_box{
+        overflow: hidden;
+        margin-top: 0!important;
+    }
+    .banner_home.not_u{
+        left: auto;
+    }
+    
 }

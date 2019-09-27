@@ -149,7 +149,6 @@ $('#slick_home').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  draggable: false,
   autoplay: true,
   fade: true,
   autoplaySpeed: 3000,
@@ -225,6 +224,7 @@ $('#slider_tips').slick({
     });
 
 
+    var first_active = 0;
     //active a nav scrolls
         
     //Crear un item final para validar
@@ -246,6 +246,14 @@ $('#slider_tips').slick({
         $('header nav').removeClass('active');
       }else{
         $('header nav').addClass('active');
+      }
+
+      if(($(window).scrollTop() + (window.innerHeight*.4)) > $('#que_puedo_hacer').offset().top){
+        if(first_active == 0){
+          $('.qph_item ').eq(0).addClass('active');
+          $('.to_do_items_actives.socios').addClass('active');
+        }
+        first_active = 1;
       }
 
     });

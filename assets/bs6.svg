@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1294dd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        filter: url(#Rectángulo_240);
+      }
+    </style>
+    <filter id="Rectángulo_240" x="0" y="0" width="82" height="82" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_231" data-name="Grupo 231" transform="translate(-2252.915 -662.302)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 2252.92, 662.3)">
+      <rect id="Rectángulo_240-2" data-name="Rectángulo 240" class="cls-1" width="64" height="64" rx="32" transform="translate(9 6)"/>
+    </g>
+    <path id="Trazado_1729" data-name="Trazado 1729" class="cls-2" d="M2332.374,719.67,2310,704.236a.772.772,0,0,0-1.21.635v30.867a.772.772,0,0,0,1.21.635l22.378-15.433a.772.772,0,0,0,0-1.27Zm-22.045,14.6V706.341l20.248,13.964Z" transform="translate(-24.499 -18.712)"/>
+  </g>
+</svg>
