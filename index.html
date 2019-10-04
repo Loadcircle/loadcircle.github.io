@@ -25,7 +25,8 @@
     
     <header class="bg_dark_blue">
         <nav class="active">
-            <img src="assets/menu_ham.svg" alt="menu hamburguesa" class="for_mob" id="menu_ham">
+            <img src="assets/menu_ham.svg" alt="menu hamburguesa" class="for_mob menu_ham" >
+            <img src="assets/close_menu.svg" alt="menu hamburguesa" class="for_mob menu_ham menu_ham_x" >
 
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="logo" width="240.333" height="55.193" viewBox="0 0 240.333 55.193">
@@ -129,13 +130,14 @@
         <div id="slick_home">
             <div>
                 <div class="home_flex bg_dark_blue">
-                    <div>
+                    <div class="force_width">
                         <h1 class="white"> 
-                            Aprende a comprar en un click 
-                            <span class="regular">#CineplanetyCocaColaAprendenContigo</span>
+                            Aprende a comprar <br> en un click <br>                           
                         </h1>
+                        <p class="white regular f30 no_lh">Conoce qué puedes hacer desde nuestros canales online paso a paso</p>
+                        <a class="quiero_aprender_mas_btn" href="#que_puedo_hacer">Quiero aprender más <img src="assets/arrow_d.svg" alt="arrow_down"></a>
                     </div>
-                    <a href="#que_puedo_hacer" class="go_down pink_btn"> <img src="assets/down_arrow.svg" alt="down arrow"> </a>
+                    <!-- <a href="#que_puedo_hacer" class="go_down pink_btn"> <img src="assets/down_arrow.svg" alt="down arrow"> </a> -->
                     <div class="quick_fix_box">
                         <div class="banner_home">
                             <img src="assets/bs_1.svg" alt="item" class="bs bs1">
@@ -151,13 +153,14 @@
             </div>
             <div>
                 <div class="home_flex bg_pink">
-                    <div>
+                    <div class="force_width">
                         <h1 class="white"> 
-                            Teletransportate <br> al cine <br>
-                            <span class="regular">Descarga nuestra aplicación y compra sin colas ni esperas</span>
+                            ¡Toda la Dulcería a <br> un click de distancia!<br>
                         </h1>
+                        <p class="white regular f30 no_lh">Cineplanet y Coca Cola te enseñan cómo comprar tus combos online </p>
+                        <a class="quiero_aprender_mas_btn bg_light_blue" href="#que_puedo_hacer">Quiero aprender más <img src="assets/arrow_d.svg" alt="arrow_down"></a>
                     </div>
-                    <a href="#que_puedo_hacer" class="go_down pink_btn force_blue"> <img src="assets/down_arrow.svg" alt="down arrow"> </a>
+                    <!-- <a href="#que_puedo_hacer" class="go_down pink_btn force_blue"> <img src="assets/down_arrow.svg" alt="down arrow"> </a> -->
                     <div class="quick_fix_box">
                         <div class="banner_home not_u">
                             <img src="assets/hulk.png" alt="telefono">
@@ -171,10 +174,9 @@
     <div id="que_puedo_hacer">
         <img src="assets/solo_cancha.png" alt="cancha" class="for_mob">
         <div class="titles_box">
-            <h2>¿Qué puedo hacer?</h2>
+            <h2>Funcionalidades</h2>
             <p>
-                Todas nuestras funcionalidades están disponibles en 
-                todos nuestros canales : <strong>web, app, boletería express.</strong>
+                Todas nuestras funcionalidades están disponibles en todos nuestros canales : <strong>web, app, boletería express.</strong>
             </p>
         </div>
 
@@ -188,18 +190,17 @@
                                 <img src="assets/user.png" alt="icono">
                                 <img src="assets/unete.png" alt="icono">
                                 <!-- <img src="assets/.png" alt="icono"> -->
-                                <p class="f30 bold">Afiliación socios</p>
+                                <p class="f30 bold">¡Afíliate Gratis!</p>
                                 <hr>
                                 <div class="qph_row_active">
                                     <div>
-                                        <p>1. Dale click al botón de la personita</p>
-                                        <p>2. Presiona el botón únete</p>
-                                        <p>3. Llena todos tus datos</p>
-                                        <p>4. Te llegará un mail a tu correo resgistrado con la confirmación.</p>
+                                        <p>1. Ingresa <a class="underline" target="_blank" href="https://www.cineplanet.com.pe/autenticacion/registro">aquí</a> </p>
+                                        <p>2. Completa el formulario</p>
+                                        <p>3. Confirma tu mail </p>
+                                        <p>4. Disfruta de todos tus beneficios</p>
+                                        <p class="f16">No olvides aceptar los términos y condiciones.</p>
                                     </div>
-                                    <div>
-                                        <p>5. Disfruta de todos tus beneficios</p>
-                                        <p class="f16">*No olvides aceptar los términos y condiciones.</p>
+                                    <div>                                        
                                         <button data-target="0" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
                                     </div>
                                 </div>
@@ -209,25 +210,50 @@
                             <div class="to_do_items_actives beneficios">
                                 <img src="assets/peliculas.png" alt="icono">
                                 <img src="assets/pantalla.png" alt="icono">
-                                <img src="assets/tbeneficios.png" alt="icono">
+                                <!-- <img src="assets/tbeneficios.png" alt="icono"> -->
                                 <p class="f30 bold">Canjea tus beneficios</p>
                                 <hr>
                                 <div class="qph_row_active">
-                                    <div>
-                                        <p>
-                                            Puedes canjear tus entradas a precio de Martes, 
-                                            tus beneficios de cumpleaños, tus puntos por entradas 
-                                            o tu entrada mensual socio Black. Solo debes seguir estos pasos
-                                        </p>
-                                        <p>1. Ingresa a la película que prefieras ver.</p>
-                                        <p>2. Escoge tus asientos.</p>                                
+                                    <div>                                        
+                                        <p class="bold simple_title_p">Canjea: </p>
+                                        <p>1. Precio de Martes</p>
+                                        <p>2. Paquete de cumpleaños  </p>
+                                        <p>3.Entrada socio (Canje de puntos) y mucho más</p>                                        
                                     </div>
                                     <div>
-                                        <p>3. Elige tus beneficios y canjéalos</p>
-                                        <p>4. Si eres Oro o Black  también puedes canjear tus beneficios en dulcería.</p>
+                                        <p class="bold simple_title_p">Pasos: </p>
+                                        <p>1. Ingresa <a class="underline" target="_blank" href="https://www.cineplanet.com.pe/peliculas">aquí</a> </p>
+                                        <p>2. Selecciona tu película</p>
+                                        <p>3. Selecciona tu función y butacas</p>
+                                        <p>4. Elige tus beneficios y ¡listo!</p>
+                                        <button data-target="1" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>                            
+                            <div class="to_do_items_actives cupones">
+                                <img src="assets/terminos.png" alt="icono">
+                                <img src="assets/boleto.png" alt="icono">
+                                <img src="assets/canjear.png" alt="icono">
+                                <p class="f30 bold">Canjea códigos promocionales</p>
+                                <hr>
+                                <div class="qph_row_active">
+                                    <div>
+                                        <p class="bold simple_title_p">Pasos: </p>
+                                        <p>1. Ingresa <a class="underline" target="_blank" href="https://www.cineplanet.com.pe/cinemas">aquí</a> </p>                                      
+                                        <p>2. Elige tu cine</p>
+                                        <p>3. Elige tu función</p>                           
+                                        <p>4. Selecciona tus butacas</p>
+                                        <p>5. Busca la sección “Canjea tus códigos”</p>                         
+                                        <p>6.  Ingresa tu código, presiona “Canjear” y ¡Listo! </p>
+                                    </div>
+                                    <div>
+                                        <p>*Asegúrate que tu código sea válido para canje online y revisa las restricciones que pueda tener ;)</p>
                                         <button data-target="2" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                         <div>                            
@@ -235,22 +261,19 @@
                                 <img src="assets/rey_leon.png" alt="icono">
                                 <img src="assets/pantalla.png" alt="icono">
                                 <img src="assets/visa.png" alt="icono">
-                                <p class="f30 bold">Canjea en boletería</p>
+                                <p class="f30 bold">Compra tus entradas</p>
                                 <hr>
                                 <div class="qph_row_active">
                                     <div>
-                                        <p>
-                                                1. Ingresa a la app, web o boletería express.
-                                        </p>
-                                        <p>2. Selecciona tu funsión.</p>
-                                        <p>3.Selecciona tus butacas.</p>      
-                                        <p>4. Escoge el tipo de entrada y dale continuar.</p>                          
+                                        <p class="bold simple_title_p">Pasos: </p>
+                                        <p>1. Ingresa <a class="underline" target="_blank" href="https://www.cineplanet.com.pe/peliculas">aquí</a> </p>
+                                        <p>2. Selecciona tu película (dale clic en comprar).</p>
+                                        <p>3. Elige tu función.</p>      
+                                        <p>4. Elige tus butacas y entradas.</p>     
+                                        <p>5. Paga y ¡listo!.</p>                          
                                     </div>
                                     <div>
-                                        <p>5. Tendrás la opción de comprar tus combos y recogerlos directamente en el cine.</p>
-                                        <p>6. Ingresa tus datos.</p>
-                                        <p>7. Ingresa tu método de pago</p>
-                                        <button data-target="4" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                                        <button data-target="3" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
                                     </div>
                                 </div>                        
                             </div>
@@ -265,41 +288,19 @@
                                 <div class="qph_row_active">
                                         
                                     <div>
-                                        <p>1. Ingresa a la app, web o boletería express.</p>
-                                        <p>2. Selecciona la opción de dulcería.</p>
-                                        <p>3. Escoge el combo que más te guste o crea uno.</p>                                
+                                        
+                                        <p class="bold simple_title_p">Pasos: </p>
+                                        <p>1. Ingresa <a class="underline" target="_blank" href="https://www.cineplanet.com.pe/dulceria-landing">aquí</a> </p>  
+                                        <p>2. Selecciona tu cine.</p>
+                                        <p>3. Elige el combo que más te guste.</p>         
+                                        <p>4. Paga y ¡listo!.</p>    
+                                        <br>     
+                                        <p>*No olvides aceptar los términos y condiciones</p>                         
                                     </div>
                                     <div>
-                                        <p>5. Llena tus datos</p>
-                                        <p>6. Elige tu método de pago</p>
-                                        <button data-target="1"  class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
+                                        <button data-target="4"  class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div>                            
-                            <div class="to_do_items_actives cupones">
-                                <img src="assets/terminos.png" alt="icono">
-                                <img src="assets/boleto.png" alt="icono">
-                                <img src="assets/canjear.png" alt="icono">
-                                <p class="f30 bold">Canjea tus cupones</p>
-                                <hr>
-                                <div class="qph_row_active">
-                                    <div>
-                                        <p>
-                                        1. Verifica que el cupón sea válido para online, puedes revisarlo en los términos y condiciones del mismo.
-                                        </p>
-                                        <p>2. Si tienes un boleto corporativo este tiene que ser de color negro y debe llamarse Boleto canje Online</p>
-                                        <p>3. Ingresa a la app, web o Boletería Express de Cineplanet</p>                                
-                                    </div>
-                                    <div>
-                                        <p>4. Selecciona tu funsión</p>
-                                        <p>5. Escoge tu butaca</p>
-                                        <p>6.Antes de elegir tus boletas encuentra la sección de canjea tus códigos, tipea en los códigos y dale canjear.</p>
-                                        <button data-target="3" class="dark_blue_btn f26">Ver tutorial <img src="assets/play_btn.svg" alt="play"> </button>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -371,8 +372,25 @@
                         </div>
                     </div>
                     <div>
+                        <div data-target="cupones" class="qph_item">
+                            <svg class=" diagonal" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:#1098f9}
+                                    </style>
+                                </defs>
+                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
+                            </svg>   
+                            <div class="light_blue">
+                                <h3 class="bold">Canjea tus
+                                        cupones</h3>
+                                <p>Canjea tus cupones corporativos digitales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
                         <div data-target="boleteria" class="qph_item">
-                            <svg class="diagonal" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
+                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
                                 <defs>
                                     <style>
                                         .cls-1{fill:#1098f9}
@@ -404,23 +422,6 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div data-target="cupones" class="qph_item">
-                            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="42.777" height="23.333" viewBox="0 0 42.777 23.333">
-                                <defs>
-                                    <style>
-                                        .cls-1{fill:#1098f9}
-                                    </style>
-                                </defs>
-                                <path id="Trazado_1659" d="M11082 171.389l23.333-21.389v42.777z" class="cls-1" data-name="Trazado 1659" transform="rotate(90 5637.389 -5444.611)"/>
-                            </svg>   
-                            <div class="light_blue">
-                                <h3 class="bold">Canjea tus
-                                        cupones</h3>
-                                <p>Canjea tus cupones corporativos digitales.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -433,29 +434,29 @@
                 <button class="arrows_pink left_video"> <img src="assets/left.svg" alt="left"> </button>
                 <button class="arrows_pink right_video"> <img src="assets/right.svg" alt="right"> </button>
                 <div>
-                    <h3 class="bold white">Afiliación socios</h3>
+                    <h3 class="bold white">¡Afíliate Gratis!</h3>
                     <hr>
-
-                </div>
-                <div>
-                    <h3 class="bold white">Compra en dulcería</h3>
-                    <hr>
-                    
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FHBZp1stxms?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
                 <div>
                     <h3 class="bold white">Canjea tus beneficios</h3>
-                    <hr>
-                    
+                    <hr>                    
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BY2QtvITg2s?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
                 <div>
-                    <h3 class="bold white">Canjea tus cupones</h3>
+                    <h3 class="bold white">Canjea códigos promocionales</h3>
                     <hr>
-                    
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ip5dXuZyBf0?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
                 <div>
-                    <h3 class="bold white">Canjea en boletería</h3>
+                    <h3 class="bold white">Compra tus entradas</h3>
                     <hr>
-                    
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KrblfrPyIxU?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="bold white">Canjea en dulcería</h3>
+                    <hr>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-4PROOTPH0M?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -490,14 +491,23 @@
                         <img src="assets/phone_ac.png" alt="telefono" class="active_img">
                     </div>
                     <div class="contenido_pd_item">
-                        <div class="m_m bold f30 white">
+
+                        <div class="m_m f30 white">
+                                
                             <div>
-                                <p><span class="counter_numer">100</span>M <br> usuarios</p>
+                                <p class="">
+                                    <strong>+<span class="counter_numer bold">1</span> millones</strong> <br>
+                                    de descargas                                   
+                                </p>
                             </div>
                             <div>
-                                <p><span class="counter_numer">3000</span>M <br> de compras</p>
+                                <p class="">
+                                    <strong>+<span class="counter_numer bold">5</span> Millones</strong> <br>
+                                    de compras
+                                </p>
                             </div>
                         </div>
+
                         <div class="descarga_app transition_canales_m">
                             <p>Descarga la app:</p>
                             <a href="https://play.google.com/store/apps/details?id=com.cineplanet&hl=es_PE" target="_blank" class="blue_btn">
@@ -532,12 +542,20 @@
                         <img src="assets/lap_ac.png" alt="laptop" class="active_img">
                     </div>
                     <div class="contenido_pd_item">
-                        <div class="m_m bold f30 white">
+
+                        <div class="m_m f30 white">
+                                
                             <div>
-                                <p><span class="counter_numer">1000</span>M <br> usuarios</p>
+                                <p class="">
+                                    <strong>+<span class="counter_numer bold">20</span> millones</strong> <br>
+                                    de visitas acumuladas                                    
+                                </p>
                             </div>
                             <div>
-                                <p><span class="counter_numer">2000</span>M <br> de compras</p>
+                                <p class="">
+                                    <strong>+<span class="counter_numer bold">2</span> Millones</strong> <br>
+                                    de compras
+                                </p>
                             </div>
                         </div>
                         <div class="transition_canales_m">
@@ -568,14 +586,18 @@
                         <img src="assets/modulo_ac.png" alt="modulo" class="active_img">
                     </div>
                     <div class="contenido_pd_item light_blue">
-                        <div class="m_m bold f30 white">
+                            
+
+                        <div class="m_m f30 white">
+                                
                             <div>
-                                <p><span class="counter_numer">1000</span>M <br> usuarios</p>
-                            </div>
-                            <div>
-                                <p><span class="counter_numer">5000</span>M <br> de compras</p>
+                                <p class="">
+                                   
+                                    <strong>+<span class="counter_numer bold">800</span> mil compras</strong> <br>
+                                </p>
                             </div>
                         </div>
+                        
                         <div class="transition_canales_m">
                             <p class="bold">Encuéntralos en estos cines:</p>
                             <ul>
@@ -610,9 +632,9 @@
 
                     <div class="white tip_content_box">
                         <p>
-                            ¿No estás seguro de lo que quieres ver? <strong>Mira nuestros trailers</strong> y elige la película que más te guste.
+                            ¿No estás segur@ de lo que quieres ver? <strong>Mira nuestros trailers</strong> y elige la película que hace match contigo.
 
-                            *Encuentrálo en cada película 
+                            *Encuentrálo en el detalle de cada película 
                         </p>
                         
                     </div>
@@ -621,7 +643,9 @@
                 <div class="cine">
                     <div class="white tip_content_box">
                         <p>
-                            Anda a la sección cines y elige tu <strong>cine favorito.</strong>  Te saldrá como primera opción en todas tus compras.
+                            Anda a la sección cines y elige tu <strong>cine favorito.</strong>  Te saldrá como primera opción en todas tus compras. <br> <br>
+
+                            *Exclusivo para Socios Cineplanet
                         
                         </p>
                     </div>
@@ -648,7 +672,7 @@
                 <div class="novedades">
                     <div class="white tip_content_box">
                         <p>
-                            En la primera vista  de nuestra app podrás enterarte de todas las ofertas como las <strong>mejoras en la experiencia Cineplanet.</strong>
+                                En la primera vista  de nuestra app podrás enterarte de todas las promos, estrenos y mucho más que tenemos para ti.
                         </p>
                     </div>
                     <img src="assets/novedades_zoom.png" alt="zoom" class="zoom_img">
@@ -656,7 +680,10 @@
                 <div class="perfil">
                         <div class="white tip_content_box">
                             <p>
-                                    ¡Mira cuantos puntos tienes! Puedes canjear entradas y combos a <strong>precio preferencial.</strong>
+                                    ¡Mira cuantos puntos tienes! Puedes canjear entradas y combos a <strong>precio preferencial.</strong> <br> <br>
+
+                                    *Exclusivo para Socios Cineplanet
+                                    
                             </p>
                         </div>
                         <img src="assets/perfil_zoom.png" alt="zoom" class="zoom_img">
