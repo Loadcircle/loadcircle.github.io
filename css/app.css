@@ -764,8 +764,9 @@ footer ul{
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    max-width: 20vw;
+    max-width: 22vw;
     justify-content: space-between;
+    margin-right: 2.3vw;
 }
 .contenido_pd_item ul li{
     min-width: 10vw;
@@ -1587,11 +1588,10 @@ header .active .descarga_app *{
         display: block;
     }
     .contenido_pd_item ul{
-        max-width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;   
-        max-width: 85%;
-        margin-left: 13%;
+        grid-template-columns: 1fr 1fr;
+        max-width: 93%;
+        margin-right: 0;
     }
     .contenido_pd_item ul li{
         min-width: 30vw;
